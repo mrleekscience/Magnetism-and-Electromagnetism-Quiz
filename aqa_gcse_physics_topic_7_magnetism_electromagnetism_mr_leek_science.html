@@ -1,0 +1,3103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AQA GCSE Physics — Topic 7: Magnetism &amp; Electromagnetism | Mr Leek Science</title>
+  <style>
+    /* ==========================================================================
+       MR LEEK SCIENCE — ROYAL / SAPPHIRE BLUE DESIGN SYSTEM (PHYSICS TOPICS 1–7)
+       100% offline-safe system typography & self-contained CSS (zero external URLs)
+       ========================================================================== */
+    :root {
+      --navy-950: #09152b;
+      --navy-900: #0f172a;
+      --blue-900: #1e3a8a;
+      --blue-800: #1e40af;
+      --blue-700: #1d4ed8;
+      --blue-600: #2563eb;
+      --blue-500: #3b82f6;
+      --blue-400: #60a5fa;
+      --blue-300: #93c5fd;
+      --blue-200: #bfdbfe;
+      --blue-100: #dbeafe;
+      --blue-50: #eff6ff;
+
+      --bg-page: #f8fafc;
+      --slate-900: #0f172a;
+      --slate-800: #1e293b;
+      --slate-700: #334155;
+      --slate-600: #475569;
+      --slate-500: #64748b;
+      --slate-400: #94a3b8;
+      --slate-300: #cbd5e1;
+      --slate-200: #e2e8f0;
+      --slate-100: #f1f5f9;
+      --slate-50: #f8fafc;
+
+      --sky-100: #e0f2fe;
+      --sky-700: #0369a1;
+      --green-chip-bg: #dcfce7;
+      --green-chip-fg: #15803d;
+      --purple-100: #f3e8ff;
+      --purple-700: #7e22ce;
+
+      --emerald-700: #047857;
+      --emerald-600: #059669;
+      --emerald-100: #d1fae5;
+      --emerald-50: #ecfdf5;
+
+      --amber-700: #b45309;
+      --amber-600: #d97706;
+      --amber-100: #fef3c7;
+      --amber-50: #fffbeb;
+
+      --rose-700: #be123c;
+      --rose-600: #dc2626;
+      --rose-500: #ef4444;
+      --rose-200: #fecaca;
+      --rose-100: #fee2e2;
+      --rose-50: #fef2f2;
+
+      --shadow-shell: 0 10px 30px rgba(15, 23, 42, 0.08);
+      --shadow-cta: 0 6px 18px -2px rgba(29, 78, 216, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--slate-900);
+      min-height: 100vh;
+      padding: 1.5rem 1rem 3rem;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, .heading-font {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      letter-spacing: -0.015em;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    /* ==========================================================================
+       MAIN APPLICATION SHELL
+       ========================================================================== */
+    .app-container {
+      max-width: 920px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      border: 1px solid var(--slate-200);
+      box-shadow: var(--shadow-shell);
+      overflow: hidden;
+    }
+
+    /* ==========================================================================
+       ROYAL / SAPPHIRE BLUE HEADER BANNER
+       ========================================================================== */
+    .banner-header {
+      background: linear-gradient(135deg, #09152b 0%, #1e3a8a 100%);
+      padding: 32px 36px;
+      color: #ffffff;
+      position: relative;
+    }
+
+    .banner-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    .spec-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(147, 197, 253, 0.38);
+      border-radius: 999px;
+      padding: 5px 14px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--blue-300);
+    }
+
+    .brand-tag {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.94);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .banner-title {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.22;
+      margin-bottom: 8px;
+    }
+
+    .banner-subtitle {
+      font-size: 0.94rem;
+      color: rgba(255, 255, 255, 0.9);
+      max-width: 800px;
+      line-height: 1.52;
+      font-weight: 400;
+    }
+
+    /* ==========================================================================
+       WHITE FORM & QUIZ BODY
+       ========================================================================== */
+    .card-body {
+      padding: 28px 36px 36px;
+    }
+
+    .section-block {
+      margin-bottom: 26px;
+    }
+
+    /* Student Name & Email Inputs */
+    .input-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .field-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .field-label {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--slate-800);
+      margin-bottom: 8px;
+    }
+
+    .field-label .req-star {
+      color: var(--blue-700);
+      margin-left: 2px;
+    }
+
+    .field-label .opt-muted {
+      color: var(--slate-400);
+      font-weight: 500;
+      margin-left: 3px;
+    }
+
+    .text-input {
+      width: 100%;
+      padding: 12px 15px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      color: var(--slate-900);
+      background: #ffffff;
+      border: 1.5px solid var(--slate-300);
+      border-radius: 12px;
+      transition: border-color 0.16s ease, box-shadow 0.16s ease;
+    }
+
+    .text-input::placeholder {
+      color: var(--slate-400);
+    }
+
+    .text-input:focus {
+      outline: none;
+      border-color: var(--blue-500);
+      box-shadow: 0 0 0 3.5px rgba(59, 130, 246, 0.22);
+    }
+
+    .text-input.input-error {
+      border-color: var(--rose-500);
+      background-color: var(--rose-50);
+      box-shadow: 0 0 0 3.5px rgba(239, 68, 68, 0.18);
+      animation: shakeInput 0.35s ease;
+    }
+
+    .error-hint {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--rose-600);
+      margin-top: 5px;
+    }
+
+    @keyframes shakeInput {
+      0%, 100% { transform: translateX(0); }
+      20% { transform: translateX(-6px); }
+      40% { transform: translateX(6px); }
+      60% { transform: translateX(-4px); }
+      80% { transform: translateX(4px); }
+    }
+
+    /* Section Header Bar */
+    .section-header-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .section-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--slate-900);
+    }
+
+    .selected-tier-pill {
+      background: var(--blue-100);
+      border: 1px solid var(--blue-300);
+      color: var(--blue-800);
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+
+    .avail-count-text {
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: var(--slate-500);
+    }
+
+    /* 3-Column Pathway / Tier Grid */
+    .tier-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .tier-card {
+      background: #ffffff;
+      border: 2px solid var(--slate-200);
+      border-radius: 16px;
+      padding: 18px 18px 20px;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.18s ease;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .tier-card:hover {
+      border-color: var(--slate-300);
+      background: #fcfcfd;
+    }
+
+    .tier-card.selected {
+      border-color: var(--blue-700);
+      background: var(--blue-50);
+      box-shadow: 0 4px 14px rgba(29, 78, 216, 0.12);
+    }
+
+    .tier-card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .spec-chip {
+      font-size: 0.69rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+
+    .chip-blue {
+      background: var(--sky-100);
+      color: var(--sky-700);
+    }
+
+    .chip-green {
+      background: var(--green-chip-bg);
+      color: var(--green-chip-fg);
+    }
+
+    .chip-purple {
+      background: var(--purple-100);
+      color: var(--purple-700);
+    }
+
+    .radio-circle {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 2px solid var(--slate-300);
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.16s ease;
+      flex-shrink: 0;
+    }
+
+    .radio-circle svg {
+      width: 13px;
+      height: 13px;
+      stroke: var(--slate-300);
+      stroke-width: 2.8;
+      fill: none;
+    }
+
+    .tier-card.selected .radio-circle {
+      background: var(--blue-700);
+      border-color: var(--blue-700);
+    }
+
+    .tier-card.selected .radio-circle svg {
+      stroke: #ffffff;
+    }
+
+    .tier-card-title {
+      font-size: 1.06rem;
+      font-weight: 800;
+      color: var(--slate-900);
+      margin-bottom: 8px;
+    }
+
+    .tier-card-desc {
+      font-size: 0.83rem;
+      color: var(--slate-600);
+      line-height: 1.52;
+    }
+
+    /* 2-Column Quiz Focus Mode Grid */
+    .focus-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .focus-card {
+      background: #ffffff;
+      border: 2px solid var(--slate-200);
+      border-radius: 16px;
+      padding: 16px 18px;
+      cursor: pointer;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      text-align: left;
+      transition: all 0.18s ease;
+    }
+
+    .focus-card:hover {
+      border-color: var(--slate-300);
+      background: #fcfcfd;
+    }
+
+    .focus-card.selected {
+      border-color: var(--blue-700);
+      background: var(--blue-50);
+      box-shadow: 0 4px 14px rgba(29, 78, 216, 0.12);
+    }
+
+    .focus-icon-box {
+      width: 42px;
+      height: 42px;
+      border-radius: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+      transition: all 0.18s ease;
+    }
+
+    .focus-icon-blue {
+      background: var(--blue-700);
+      color: #ffffff;
+    }
+
+    .focus-icon-amber {
+      background: var(--amber-100);
+      color: var(--amber-700);
+    }
+
+    .focus-card.selected .focus-icon-amber {
+      background: var(--blue-700);
+      color: #ffffff;
+    }
+
+    .focus-content {
+      flex: 1;
+    }
+
+    .focus-title {
+      font-size: 0.98rem;
+      font-weight: 800;
+      color: var(--slate-900);
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .focus-check {
+      color: var(--blue-700);
+      font-weight: 800;
+      font-size: 0.95rem;
+    }
+
+    .focus-desc {
+      font-size: 0.82rem;
+      color: var(--slate-600);
+      line-height: 1.48;
+    }
+
+    /* 5-Column Question Count Pills */
+    .count-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+    }
+
+    .count-btn {
+      background: #ffffff;
+      border: 1.5px solid var(--slate-200);
+      border-radius: 12px;
+      padding: 13px 10px;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--slate-800);
+      cursor: pointer;
+      transition: all 0.16s ease;
+    }
+
+    .count-btn:hover:not(.active) {
+      border-color: var(--blue-300);
+      background: var(--blue-50);
+    }
+
+    .count-btn.active {
+      background: var(--blue-700);
+      border-color: var(--blue-700);
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(29, 78, 216, 0.28);
+    }
+
+    .cap-notice {
+      margin-top: 9px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--amber-700);
+      background: var(--amber-50);
+      border: 1px solid #fde68a;
+      border-radius: 10px;
+      padding: 7px 12px;
+    }
+
+    /* Divider + Primary CTA Button */
+    .cta-divider {
+      border: none;
+      border-top: 1px solid var(--slate-200);
+      margin: 26px 0 22px;
+    }
+
+    .btn-start-cta {
+      width: 100%;
+      background: var(--blue-700);
+      color: #ffffff;
+      border: none;
+      border-radius: 12px;
+      padding: 16px 24px;
+      font-family: inherit;
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: var(--shadow-cta);
+      transition: background 0.18s ease, transform 0.15s ease;
+    }
+
+    .btn-start-cta:hover {
+      background: var(--blue-600);
+      transform: translateY(-1px);
+    }
+
+    /* ==========================================================================
+       VIEW 2: ACTIVE QUIZ RUNNER
+       ========================================================================== */
+    .quiz-hud {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .hud-badges {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .hud-pill-brand {
+      background: var(--navy-950);
+      color: #ffffff;
+      font-size: 0.74rem;
+      font-weight: 800;
+      padding: 5px 12px;
+      border-radius: 999px;
+      letter-spacing: 0.02em;
+    }
+
+    .hud-pill-dark {
+      background: var(--blue-900);
+      color: #ffffff;
+      font-size: 0.76rem;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 999px;
+    }
+
+    .hud-pill-blue {
+      background: var(--blue-100);
+      color: var(--blue-800);
+      border: 1px solid var(--blue-300);
+      font-size: 0.76rem;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 999px;
+    }
+
+    .hud-pill-amber {
+      background: var(--amber-100);
+      color: var(--amber-700);
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 5px 12px;
+      border-radius: 999px;
+    }
+
+    .hud-stats {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .hud-score-badge {
+      background: var(--emerald-50);
+      color: var(--emerald-700);
+      border: 1px solid #a7f3d0;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 4px 11px;
+      border-radius: 999px;
+    }
+
+    .hud-q-counter {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--slate-700);
+    }
+
+    .hud-change-btn {
+      background: #ffffff;
+      color: var(--slate-700);
+      border: 1.5px solid var(--slate-300);
+      border-radius: 999px;
+      padding: 4px 12px;
+      font-family: inherit;
+      font-size: 0.76rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .hud-change-btn:hover {
+      border-color: var(--blue-700);
+      color: var(--blue-700);
+      background: var(--blue-50);
+    }
+
+    .progress-track {
+      width: 100%;
+      height: 8px;
+      background: var(--slate-100);
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 22px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--blue-800), var(--blue-500));
+      border-radius: 999px;
+      transition: width 0.3s ease;
+    }
+
+    .question-box {
+      background: var(--blue-50);
+      border: 1.5px solid var(--blue-200);
+      border-radius: 16px;
+      padding: 20px 22px;
+      margin-bottom: 18px;
+    }
+
+    .q-meta-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .q-kicker {
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--blue-800);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .focus-badge {
+      background: var(--amber-100);
+      color: var(--amber-700);
+      border: 1px solid #fcd34d;
+      font-size: 0.68rem;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 999px;
+      letter-spacing: 0.04em;
+    }
+
+    .kbd-tip {
+      font-size: 0.73rem;
+      color: var(--slate-500);
+      font-weight: 500;
+    }
+
+    .q-stem {
+      font-size: clamp(1.05rem, 2.1vw, 1.2rem);
+      font-weight: 700;
+      color: var(--slate-900);
+      line-height: 1.52;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-family: inherit;
+      font-size: 0.85rem;
+    }
+
+    .data-table th, .data-table td {
+      border: 1px solid var(--blue-200);
+      padding: 6px 10px;
+      text-align: center;
+    }
+
+    .data-table th {
+      background: var(--blue-100);
+      color: var(--blue-900);
+      font-weight: 700;
+    }
+
+    .data-table td {
+      background: #ffffff;
+      color: var(--slate-800);
+      font-weight: 600;
+    }
+
+    .options-list {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+      margin-bottom: 18px;
+    }
+
+    .opt-btn {
+      width: 100%;
+      text-align: left;
+      background: #ffffff;
+      border: 2px solid var(--slate-200);
+      border-radius: 14px;
+      padding: 14px 16px;
+      font-family: inherit;
+      font-size: 0.96rem;
+      font-weight: 500;
+      color: var(--slate-800);
+      cursor: pointer;
+      display: flex;
+      align-items: flex-start;
+      gap: 13px;
+      transition: all 0.15s ease;
+    }
+
+    .opt-btn:hover:not(:disabled) {
+      border-color: var(--blue-600);
+      background: var(--blue-50);
+    }
+
+    .opt-btn:disabled {
+      cursor: default;
+    }
+
+    .opt-letter {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: var(--slate-100);
+      color: var(--slate-700);
+      font-size: 0.82rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .opt-btn.correct {
+      border-color: var(--emerald-600);
+      background: var(--emerald-50);
+      color: var(--slate-900);
+    }
+
+    .opt-btn.correct .opt-letter {
+      background: var(--emerald-600);
+      color: #ffffff;
+    }
+
+    .opt-btn.incorrect {
+      border-color: var(--rose-600);
+      background: var(--rose-50);
+      color: var(--rose-700);
+    }
+
+    .opt-btn.incorrect .opt-letter {
+      background: var(--rose-600);
+      color: #ffffff;
+    }
+
+    .opt-btn.dimmed {
+      opacity: 0.55;
+    }
+
+    .feedback-panel {
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin-bottom: 18px;
+      animation: fadeSlide 0.22s ease;
+    }
+
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .feedback-panel.fb-pass {
+      background: var(--emerald-50);
+      border: 1px solid #a7f3d0;
+      border-left: 5px solid var(--emerald-600);
+    }
+
+    .feedback-panel.fb-fail {
+      background: var(--rose-50);
+      border: 1px solid var(--rose-200);
+      border-left: 5px solid var(--rose-600);
+    }
+
+    .fb-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .fb-status {
+      font-weight: 800;
+      font-size: 0.98rem;
+    }
+
+    .fb-pass .fb-status { color: var(--emerald-700); }
+    .fb-fail .fb-status { color: var(--rose-600); }
+
+    .fb-chip {
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--slate-700);
+      border: 1px solid var(--slate-200);
+    }
+
+    .fb-text {
+      font-size: 0.91rem;
+      color: var(--slate-800);
+      line-height: 1.56;
+    }
+
+    .quiz-bottom-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      padding-top: 14px;
+      border-top: 1px solid var(--slate-200);
+    }
+
+    .btn-secondary {
+      background: #ffffff;
+      color: var(--slate-700);
+      border: 1.5px solid var(--slate-300);
+      border-radius: 12px;
+      padding: 11px 18px;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.16s ease;
+    }
+
+    .btn-secondary:hover {
+      background: var(--slate-50);
+      border-color: var(--slate-400);
+    }
+
+    .btn-primary-sm {
+      background: var(--blue-700);
+      color: #ffffff;
+      border: none;
+      border-radius: 12px;
+      padding: 12px 22px;
+      font-family: inherit;
+      font-size: 0.94rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(29, 78, 216, 0.25);
+      transition: background 0.16s ease;
+    }
+
+    .btn-primary-sm:hover {
+      background: var(--blue-600);
+    }
+
+    /* ==========================================================================
+       VIEW 3: DIAGNOSTIC MASTERY DASHBOARD
+       ========================================================================== */
+    .report-hero-box {
+      background: var(--blue-50);
+      border: 1.5px solid var(--blue-200);
+      border-radius: 16px;
+      padding: 24px 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .report-student-line {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--blue-800);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 6px;
+    }
+
+    .report-score-row {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .report-pct {
+      font-size: clamp(2.5rem, 5vw, 3.3rem);
+      font-weight: 800;
+      color: var(--blue-700);
+      line-height: 1;
+    }
+
+    .report-fraction {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--slate-600);
+    }
+
+    .grade-pill {
+      display: inline-block;
+      background: var(--blue-900);
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+
+    .report-summary-msg {
+      font-size: 0.93rem;
+      color: var(--slate-700);
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .report-btn-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 26px;
+    }
+
+    .mastery-section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1.5px solid var(--slate-200);
+    }
+
+    .mastery-section-head h3 {
+      font-size: 1.05rem;
+      color: var(--slate-900);
+    }
+
+    .legend-row {
+      display: flex;
+      gap: 8px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      flex-wrap: wrap;
+    }
+
+    .tag-g { background: var(--emerald-50); color: var(--emerald-700); padding: 3px 9px; border-radius: 999px; }
+    .tag-a { background: var(--amber-50); color: var(--amber-700); padding: 3px 9px; border-radius: 999px; }
+    .tag-r { background: var(--rose-50); color: var(--rose-600); padding: 3px 9px; border-radius: 999px; }
+
+    .mastery-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .mastery-item {
+      border: 1.5px solid var(--slate-200);
+      border-radius: 14px;
+      padding: 14px 16px;
+      background: #ffffff;
+    }
+
+    .mastery-item-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+
+    .mastery-name {
+      font-weight: 700;
+      font-size: 0.94rem;
+      color: var(--slate-900);
+    }
+
+    .mastery-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .status-chip {
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 3px 9px;
+      border-radius: 999px;
+    }
+
+    .sc-strong { background: var(--emerald-100); color: var(--emerald-700); }
+    .sc-dev { background: var(--amber-100); color: var(--amber-700); }
+    .sc-weak { background: var(--rose-100); color: var(--rose-600); }
+
+    .mastery-bar-track {
+      width: 100%;
+      height: 8px;
+      background: var(--slate-100);
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 7px;
+    }
+
+    .mastery-bar-fill {
+      height: 100%;
+      border-radius: 999px;
+    }
+
+    .fill-g { background: var(--emerald-600); }
+    .fill-a { background: var(--amber-600); }
+    .fill-r { background: var(--rose-600); }
+
+    .mastery-tip {
+      font-size: 0.82rem;
+      color: var(--slate-600);
+      line-height: 1.5;
+    }
+
+    .review-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .review-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .review-card {
+      border: 1.5px solid var(--slate-200);
+      border-left: 5px solid var(--slate-400);
+      border-radius: 12px;
+      padding: 14px 16px;
+    }
+
+    .review-card.rc-ok { border-left-color: var(--emerald-600); }
+    .review-card.rc-bad { border-left-color: var(--rose-600); }
+
+    .rc-kicker {
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--blue-800);
+      margin-bottom: 4px;
+    }
+
+    .rc-q {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--slate-900);
+      margin-bottom: 6px;
+    }
+
+    .rc-ans {
+      font-size: 0.86rem;
+      margin-bottom: 3px;
+    }
+
+    .rc-exp {
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px dashed var(--slate-200);
+      font-size: 0.84rem;
+      color: var(--slate-700);
+      line-height: 1.52;
+    }
+
+    .footer-note {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--slate-400);
+      margin-top: 1.5rem;
+    }
+
+    /* ==========================================================================
+       RESPONSIVE BREAKPOINTS
+       ========================================================================== */
+    @media (max-width: 820px) {
+      .tier-grid {
+        grid-template-columns: 1fr;
+      }
+      .focus-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 0.75rem 0.65rem 2rem;
+      }
+      .banner-header {
+        padding: 24px 20px;
+      }
+      .card-body {
+        padding: 20px 18px 26px;
+      }
+      .input-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      .count-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .kbd-tip {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- ======================================================================
+         ROYAL / SAPPHIRE BLUE HEADER BANNER
+         ====================================================================== -->
+    <header class="banner-header">
+      <div class="banner-top-row">
+        <span class="spec-pill">MR LEEK SCIENCE &bull; AQA GCSE PHYSICS (8463 / 8464)</span>
+        <span class="brand-tag">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#93c5fd" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 3v7a6 6 0 0 0 12 0V3"></path>
+            <line x1="4" y1="3" x2="8" y2="3"></line>
+            <line x1="16" y1="3" x2="20" y2="3"></line>
+          </svg>
+          Paper 2 Revision
+        </span>
+      </div>
+      <h1 id="banner-main-title" class="banner-title">Topic 7: Magnetism &amp; Electromagnetism</h1>
+      <p id="banner-main-sub" class="banner-subtitle">Interactive Diagnostic Revision Hub &bull; Foundation, Higher &amp; Separate Physics</p>
+    </header>
+
+    <!-- ======================================================================
+         VIEW 1: CONFIGURATION SCREEN
+         ====================================================================== -->
+    <main id="view-config" class="card-body">
+      <!-- 1. Student Details -->
+      <div class="section-block input-grid">
+        <div class="field-group">
+          <label for="student-name" class="field-label">Student Name <span class="req-star">*</span></label>
+          <input type="text" id="student-name" class="text-input" placeholder="Enter your full name" autocomplete="name" />
+          <span id="name-error-msg" class="error-hint hidden">Please enter your full name to start your diagnostic quiz.</span>
+        </div>
+
+        <div class="field-group">
+          <label for="student-email" class="field-label">Student Email <span class="opt-muted">(Optional)</span></label>
+          <input type="email" id="student-email" class="text-input" placeholder="e.g. student@school.co.uk" autocomplete="email" />
+        </div>
+      </div>
+
+      <!-- 2. Select Pathway / Tier -->
+      <div class="section-block">
+        <div class="section-header-bar">
+          <span class="section-title">Select Pathway / Tier</span>
+          <span id="selected-tier-badge" class="selected-tier-pill">Higher Tier Selected</span>
+        </div>
+
+        <div class="tier-grid" role="radiogroup" aria-label="Select Pathway or Tier">
+          <!-- Foundation Tier -->
+          <div class="tier-card" id="tier-card-foundation" role="radio" aria-checked="false" tabindex="0" onclick="selectTier('foundation')" onkeydown="if(event.key==='Enter'||event.key===' ')selectTier('foundation')">
+            <div class="tier-card-top">
+              <span class="spec-chip chip-blue">COMBINED 8464</span>
+              <span class="radio-circle" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+            </div>
+            <div class="tier-card-title">Foundation Tier</div>
+            <p class="tier-card-desc">Grades 1–5 &bull; Core Magnetism &amp; Electromagnets: poles, repulsion test, induced magnets, plotting compasses, wire &amp; solenoid fields, and soft iron cores.</p>
+          </div>
+
+          <!-- Higher Tier (Default Selected) -->
+          <div class="tier-card selected" id="tier-card-higher" role="radio" aria-checked="true" tabindex="0" onclick="selectTier('higher')" onkeydown="if(event.key==='Enter'||event.key===' ')selectTier('higher')">
+            <div class="tier-card-top">
+              <span class="spec-chip chip-green">COMBINED 8464</span>
+              <span class="radio-circle" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+            </div>
+            <div class="tier-card-title">Higher Tier</div>
+            <p class="tier-card-desc">Grades 4–9 &bull; Motor Effect, F = BIl &amp; Fleming's Left-Hand Rule: force on a current-carrying conductor, Tesla units, and split-ring commutator DC motors.</p>
+          </div>
+
+          <!-- Separate Physics (8463) -->
+          <div class="tier-card" id="tier-card-separate" role="radio" aria-checked="false" tabindex="0" onclick="selectTier('separate')" onkeydown="if(event.key==='Enter'||event.key===' ')selectTier('separate')">
+            <div class="tier-card-top">
+              <span class="spec-chip chip-purple">TRIPLE 8463</span>
+              <span class="radio-circle" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+            </div>
+            <div class="tier-card-title">Separate Physics (8463)</div>
+            <p class="tier-card-desc">Grades 4–9 &bull; All Higher + Generator Effect, Transformers &amp; Loudspeakers: loudspeakers, microphones, alternators, dynamos, V<sub>p</sub>/V<sub>s</sub> = n<sub>p</sub>/n<sub>s</sub> &amp; National Grid.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Quiz Focus Mode -->
+      <div class="section-block">
+        <div class="section-header-bar">
+          <span class="section-title">Quiz Focus Mode</span>
+        </div>
+
+        <div class="focus-grid" role="radiogroup" aria-label="Quiz Focus Mode">
+          <!-- Option 1: All Topics -->
+          <div class="focus-card selected" id="focus-card-all" role="radio" aria-checked="true" tabindex="0" onclick="selectFocus('all')" onkeydown="if(event.key==='Enter'||event.key===' ')selectFocus('all')">
+            <div class="focus-icon-box focus-icon-blue" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <div class="focus-content">
+              <div class="focus-title">
+                <span>All Magnetism &amp; Electromagnetism Topics</span>
+                <span id="focus-check-all" class="focus-check">&#10003;</span>
+              </div>
+              <p class="focus-desc">Full Topic 7 coverage for chosen tier: magnetic fields, electromagnets, Fleming's left-hand rule, motors, generators &amp; transformers.</p>
+            </div>
+          </div>
+
+          <!-- Option 2: Motor Effect, Generator & Calculations Only -->
+          <div class="focus-card" id="focus-card-focused" role="radio" aria-checked="false" tabindex="0" onclick="selectFocus('focused')" onkeydown="if(event.key==='Enter'||event.key===' ')selectFocus('focused')">
+            <div class="focus-icon-box focus-icon-amber" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <div class="focus-content">
+              <div class="focus-title">
+                <span>Motor Effect, Generator &amp; Calculations Only</span>
+                <span id="focus-check-focused" class="focus-check hidden">&#10003;</span>
+              </div>
+              <p class="focus-desc">Focused drill on F = BIl, transformer equations (V<sub>p</sub>/V<sub>s</sub> = n<sub>p</sub>/n<sub>s</sub> &amp; V<sub>p</sub>I<sub>p</sub> = V<sub>s</sub>I<sub>s</sub>), Fleming's rules &amp; induced potential.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Question Count Selector -->
+      <div class="section-block" style="margin-bottom: 0;">
+        <div class="section-header-bar">
+          <span class="section-title">Question Count Selector</span>
+          <span id="available-q-label" class="avail-count-text">48 unique questions available for Higher Tier</span>
+        </div>
+
+        <div class="count-grid" role="radiogroup" aria-label="Number of Questions">
+          <button type="button" class="count-btn" data-count="10" onclick="selectCount(10)">10</button>
+          <button type="button" class="count-btn active" data-count="20" onclick="selectCount(20)">20</button>
+          <button type="button" class="count-btn" data-count="30" onclick="selectCount(30)">30</button>
+          <button type="button" class="count-btn" data-count="50" onclick="selectCount(50)">50</button>
+          <button type="button" class="count-btn" data-count="80" onclick="selectCount(80)">80</button>
+        </div>
+
+        <div id="cap-feedback-banner" class="cap-notice hidden"></div>
+      </div>
+
+      <hr class="cta-divider" />
+
+      <button type="button" id="btn-start-quiz" class="btn-start-cta" onclick="launchConfiguredQuiz()">
+        Start Diagnostic Quiz &rarr;
+      </button>
+    </main>
+
+    <!-- ======================================================================
+         VIEW 2: ACTIVE QUIZ ENGINE
+         ====================================================================== -->
+    <section id="view-quiz" class="card-body hidden" aria-live="polite">
+      <div class="quiz-hud">
+        <div class="hud-badges">
+          <span class="hud-pill-brand">Mr Leek Science</span>
+          <span id="hud-student-pill" class="hud-pill-dark">Student</span>
+          <span id="hud-tier-pill" class="hud-pill-blue">Higher Tier</span>
+          <span id="hud-focus-pill" class="hud-pill-blue">All Topics</span>
+          <span id="hud-retry-pill" class="hud-pill-amber hidden">Retry Missed Mode</span>
+        </div>
+
+        <div class="hud-stats">
+          <span id="hud-live-score" class="hud-score-badge">Score: 0 / 0</span>
+          <span id="hud-counter" class="hud-q-counter">Question 1 of 20</span>
+          <button type="button" class="hud-change-btn" onclick="returnToConfig()">New Quiz / Settings</button>
+        </div>
+      </div>
+
+      <div class="progress-track">
+        <div id="quiz-progress-fill" class="progress-fill"></div>
+      </div>
+
+      <div class="question-box">
+        <div class="q-meta-row">
+          <span id="q-kicker-label" class="q-kicker">Question 1 &bull; Sub-topic</span>
+          <span class="kbd-tip">Shortcuts: 1–4 or A–D to answer &bull; Enter / Space for Next</span>
+        </div>
+        <div id="q-stem-text" class="q-stem">Question stem</div>
+      </div>
+
+      <div id="quiz-options-list" class="options-list"></div>
+
+      <div id="quiz-feedback-panel" class="feedback-panel hidden">
+        <div class="fb-top">
+          <span id="fb-status-text" class="fb-status"></span>
+          <span class="fb-chip">AQA Examiner Insight</span>
+        </div>
+        <div id="fb-insight-text" class="fb-text"></div>
+      </div>
+
+      <div class="quiz-bottom-actions">
+        <button type="button" class="btn-secondary" onclick="returnToConfig()">&larr; New Quiz / Change Settings</button>
+        <button type="button" id="btn-next-question" class="btn-primary-sm hidden" onclick="advanceQuestion()">Next Question &rarr;</button>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         VIEW 3: DIAGNOSTIC MASTERY DASHBOARD
+         ====================================================================== -->
+    <section id="view-report" class="card-body hidden">
+      <div class="report-hero-box">
+        <div id="rep-student-header" class="report-student-line">Diagnostic Report &bull; Student</div>
+        <div class="report-score-row">
+          <span id="rep-pct-val" class="report-pct">85%</span>
+          <span id="rep-frac-val" class="report-fraction">(17 / 20)</span>
+        </div>
+        <div id="rep-grade-pill" class="grade-pill">Estimated AQA Grade Indicator: Grade 8</div>
+        <p id="rep-msg-text" class="report-summary-msg"></p>
+      </div>
+
+      <div class="report-btn-row">
+        <button type="button" id="btn-retry-missed" class="btn-primary-sm" onclick="startRetryMissed()">Retry Missed Questions (3)</button>
+        <button type="button" class="btn-secondary" onclick="launchConfiguredQuiz()">Retake Full Tier Quiz</button>
+        <button type="button" class="btn-secondary" onclick="returnToConfig()">New Quiz / Change Settings</button>
+      </div>
+
+      <div class="mastery-section-head">
+        <h3>Sub-Topic Mastery Breakdown</h3>
+        <div class="legend-row">
+          <span class="tag-g">Strong (&ge;75%)</span>
+          <span class="tag-a">Developing (50–74%)</span>
+          <span class="tag-r">Priority Revision (&lt;50%)</span>
+        </div>
+      </div>
+
+      <div id="rep-mastery-grid" class="mastery-grid"></div>
+
+      <div class="review-header">
+        <h3 style="font-size: 1.05rem; color: var(--slate-900);">Question-by-Question Review</h3>
+        <button type="button" id="btn-toggle-review" class="btn-secondary" onclick="toggleReviewSection()">Expand Full Question-by-Question Review</button>
+      </div>
+
+      <div id="rep-review-list" class="review-list hidden"></div>
+    </section>
+  </div>
+
+  <p class="footer-note">&copy; Mr Leek Science &bull; AQA GCSE Physics (8463 / 8464) Topic 7: Magnetism &amp; Electromagnetism</p>
+
+  <script>
+    /* ==========================================================================
+       AQA GCSE PHYSICS TOPIC 7 QUESTION BANK (76 UNIQUE QUESTIONS)
+       Sub-topics:
+       1. Permanent & Induced Magnets & Magnetic Fields (16 Qs)
+       2. Electromagnetism & Solenoids (14 Qs)
+       3. Fleming's Left-Hand Rule & The Motor Effect (18 Qs)
+       4. Loudspeakers, Microphones & The Generator Effect [Separate Physics 8463] (14 Qs)
+       5. Transformers & The National Grid [Separate Physics 8463] (14 Qs)
+       ========================================================================== */
+    const SUBTOPIC_GUIDANCE = {
+      "Permanent & Induced Magnets & Magnetic Fields": "Like poles REPEL and unlike poles ATTRACT. Repulsion is the ONLY conclusive test for a permanent magnet (because a permanent magnet also attracts unmagnetised iron, steel, cobalt, or nickel). A permanent magnet produces its own magnetic field; an induced magnet becomes magnetic when placed inside a magnetic field (causing attraction) and loses most/all of its magnetism quickly when removed. Magnetic field lines always point from NORTH to SOUTH and are closest together where the field is strongest (at the poles). A magnetic compass needle aligns with Earth's magnetic field, proving Earth's core is magnetic.",
+      "Electromagnetism & Solenoids": "When a current flows through a conducting wire, a magnetic field is produced around the wire. Use the Right-Hand Grip Rule: thumb points in the direction of conventional current (+ to &minus;), fingers curl in the direction of the circular magnetic field lines (which get further apart as distance from the wire increases). Shaping the wire into a coil (SOLENOID) increases the magnetic field strength: inside a solenoid the field is STRONG and UNIFORM (parallel, evenly spaced lines), while outside it resembles a bar magnet. Adding a SOFT IRON CORE creates an electromagnet that can be switched on and off (used in relays, scrapyard cranes, and electric bells).",
+      "Fleming's Left-Hand Rule & The Motor Effect": "When a conductor carrying a current is placed in a magnetic field, the magnet producing the field and the conductor exert a force on each other (the MOTOR EFFECT). Maximum force occurs when the conductor is at 90&deg; to the magnetic field; ZERO force occurs when the current is parallel to the field. Use Fleming's Left-Hand Rule: First finger = Field (N &rarr; S), seCond finger = Current (+ &rarr; &minus;), thuMb = Motion / Force. Equation: F = B &times; I &times; l (F in N, B in Tesla T, I in A, l in m — always convert cm &divide; 100 and mA &divide; 1000!). In a simple DC motor, a split-ring commutator reverses the current every half-turn so the coil keeps rotating in the same direction.",
+      "Loudspeakers, Microphones & The Generator Effect": "Separate Physics (8463): Moving-coil loudspeakers use the MOTOR EFFECT—varying AC in a coil inside a permanent magnet's field causes the cone to vibrate and generate sound pressure waves. Conversely, if an electrical conductor moves relative to a magnetic field (or a magnetic field changes around a conductor), a potential difference is induced across the ends of the conductor (GENERATOR EFFECT). Induced p.d./current always opposes the original change (Lenz's Law) and increases with faster movement, stronger magnets, or more coil turns. An ALTERNATOR uses slip rings to produce alternating current (AC); a DYNAMO uses a split-ring commutator to produce pulsating direct current (DC). Moving-coil microphones use the generator effect to convert sound waves into AC.",
+      "Transformers & The National Grid": "Separate Physics (8463): A basic transformer consists of a primary coil and a secondary coil wound on an easily magnetised SOFT IRON CORE. Alternating current (AC) in the primary coil creates a continuously changing magnetic field in the iron core, which induces an alternating p.d. across the secondary coil (DC will NOT work because a constant magnetic field induces zero p.d.!). Step-up transformers have more turns on the secondary coil (n<sub>s</sub> &gt; n<sub>p</sub>, V<sub>s</sub> &gt; V<sub>p</sub>); step-down transformers have fewer turns on the secondary coil (n<sub>s</sub> &lt; n<sub>p</sub>). Equations: V<sub>p</sub> / V<sub>s</sub> = n<sub>p</sub> / n<sub>s</sub> and for 100% efficiency, V<sub>p</sub> I<sub>p</sub> = V<sub>s</sub> I<sub>s</sub>. In the National Grid, step-up transformers raise p.d. to ~400 kV so transmission current I is much smaller, drastically reducing thermal energy wasted in cables (P = I<sup>2</sup>R)."
+    };
+
+    const QUESTION_POOL = [
+      // ========================================================================
+      // 1. PERMANENT & INDUCED MAGNETS & MAGNETIC FIELDS (16 Questions)
+      // ========================================================================
+      {
+        id: "P7_Q01",
+        subtopic: "Permanent & Induced Magnets & Magnetic Fields",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "Where are the magnetic forces exerted by a bar magnet the STRONGEST, and what happens when two poles are brought close together?",
+        options: [
+          "Strongest at the poles; two like poles (N–N or S–S) repel each other, while two unlike poles (N–S) attract each other",
+          "Strongest at the exact centre of the bar; two like poles attract and two unlike poles repel",
+          "Equal strength everywhere along the bar; all poles attract each other",
+          "Strongest only at the north pole; the south pole exerts no force"
+        ],
+        correct: 0,
+        insight: "AQA specification exact wording: The poles of a magnet are the places where the magnetic forces are strongest. When two magnets are brought close together they exert a force on each other. Two like poles repel each other. Two unlike poles attract each other. Attraction and repulsion between two magnetic poles are examples of non-contact forces."
+      },
+      {
+        id: "P7_Q02",
+        subtopic: "Permanent & Induced Magnets & Magnetic Fields",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "A student is given three identical-looking metal bars: Bar X (a permanent magnet), Bar Y (an unmagnetised iron bar), and Bar Z (a copper bar). Which observation is the ONLY conclusive test to prove that Bar X is a permanent magnet?",
+        options: [
+          "Bar X REPELS one end of a known permanent magnet (repulsion only occurs between two permanent magnets, whereas unmagnetised iron is always attracted)",
+          "Bar X attracts one end of a known permanent magnet",
+          "Bar X does not interact with Bar Z at all",
+          "Bar X conducts electricity when connected to a cell"
+        ],
+        correct: 0,
+        insight: "Classic AQA mark-scheme rule: Repulsion is the ONLY sure test for a permanent magnet! A permanent magnet will attract both an opposite pole AND any unmagnetised magnetic material (iron, steel, cobalt, nickel) via induced magnetism."
+      },
+      {
+        id: "P7_Q03",
+        subtopic: "Permanent & Induced Magnets & Magnetic Fields",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "What is the key difference between a PERMANENT MAGNET and an INDUCED MAGNET?",
+        options: [
+          "A permanent magnet produces its own magnetic field at all times; an induced magnet is a material that becomes a magnet when placed in a magnetic field (always causing attraction) and loses most or all of its magnetism quickly when removed from the magnetic field",
+          "A permanent magnet only works when connected to a battery; an induced magnet stays magnetised forever",
+          "An induced magnet always repels a permanent magnet; a permanent magnet never attracts iron",
+          "Permanent magnets are made of copper; induced magnets are made of aluminium"
+        ],
+        correct: 0,
+        insight: "AQA specification exact definitions: A permanent magnet produces its own magnetic field. An induced magnet is a material that becomes a magnet when it is placed in a magnetic field. Induced magnetism always causes a force of attraction. When removed from the magnetic field an induced magnet loses most/all of its magnetism quickly."
+      },
+      {
+        id: "P7_Q04",
+        subtopic: "Permanent & Induced Magnets & Magnetic Fields",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "Which four materials are MAGNETIC MATERIALS (capable of being attracted by a magnet or becoming induced magnets)?",
+        options: [
+          "Iron, steel, cobalt, and nickel",
+          "Copper, aluminium, gold, and silver",
+          "Iron, copper, zinc, and lead",
+          "Steel, brass, bronze, and aluminium"
+        ],
+        correct: 0,
+        insight: "Memorise the four magnetic materials for AQA: Iron, steel (an alloy of iron), cobalt, and nickel. Copper, aluminium, brass, gold, and silver are non-magnetic."
+      },
+      {
+        id: "P7_Q05",
+        subtopic: "Permanent & Induced Magnets & Magnetic Fields",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "Define a MAGNETIC FIELD, and state the rule for the direction of magnetic field lines.",
+        options: [
+          "The region around a magnet where a force acts on another magnet or on a magnetic material; the direction of the magnetic field at any point is given by the direction of the force that would act on another north pole placed at that point (always pointing from the NORTH pole to the SOUTH pole)",
+          "The region inside a battery where electrons flow; field lines always point from South to North",
+          "A contact force between two copper wires; field lines cross over each other at right angles",
+          "The gravitational pull of a magnet; field lines form straight lines outwards in all directions without ever returning"
+        ],
+        correct: 0,
+        insight: "AQA specification exact wording: The region around a magnet where a force acts on another magnet or on a magnetic material (iron, steel, cobalt and nickel) is called the magnetic field. The direction of a magnetic field line is from the north (seeking) pole of a magnet to the south (seeking) pole of the magnet."
+      },
+      {
+        id: "P7_Q06",
+        subtopic: "Permanent & Induced Magnets & Magnetic Fields",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "How does a magnetic field line diagram show where the magnetic field is STRONGEST?",
+        options: [
+          "Where the magnetic field lines are CLOSEST TOGETHER (most concentrated, such as near the poles of a bar magnet)",
+          "Where the magnetic field lines are furthest apart",
+          "Where the magnetic field lines cross over each other",
+          "Where the arrows on the field lines are largest"
+        ],
+        correct: 0,
+        insight: "The spacing of magnetic field lines indicates field strength: closer lines = stronger magnetic field; wider-spaced lines = weaker magnetic field. Field lines NEVER cross each other."
+      },
+      {
+        id: "P7_Q07",
+        subtopic: "Permanent & Induced Magnets & Magnetic Fields",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "Describe how to use a small PLOTTING COMPASS to map the magnetic field pattern around a permanent bar magnet on a sheet of paper.",
+        options: [
+          "Place the bar magnet on plain paper and draw around it; place the plotting compass near one pole and mark a pencil dot at the tip of the compass needle; move the compass so its tail sits over that dot and mark a new dot at the tip; repeat until reaching the other pole, join the dots with a smooth curve, and add arrows pointing from North to South",
+          "Sprinkle iron filings onto the compass glass and shake vigorously",
+          "Hold the compass 2 metres above the table and measure the temperature",
+          "Draw straight lines from the middle of the magnet to the corners of the paper"
+        ],
+        correct: 0,
+        insight: "Standard AQA 4-mark practical method for plotting a magnetic field using a plotting compass. Remember to repeat from several starting points around both poles and draw arrows from N &rarr; S."
+      },
+      {
+        id: "P7_Q08",
+        subtopic: "Permanent & Induced Magnets & Magnetic Fields",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "How does the behaviour of a magnetic compass provide evidence that the EARTH has a magnetic field?",
+        options: [
+          "A magnetic compass contains a small bar magnet that aligns with Earth's magnetic field, always pointing in the north–south direction when away from other magnets (indicating Earth's liquid/solid iron-nickel core generates a magnetic field)",
+          "A magnetic compass spins continuously at 50 revolutions per second everywhere on Earth",
+          "A compass needle points straight down into the ground at the equator",
+          "A compass only works when held next to a copper wire"
+        ],
+        correct: 0,
+        insight: "AQA specification exact wording: A magnetic compass contains a small bar magnet. The Earth has a magnetic field. The compass needle points in the direction of the Earth's magnetic field."
+      },
+      {
+        id: "P7_Q09",
+        subtopic: "Permanent & Induced Magnets & Magnetic Fields",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "A student hangs three steel paperclips in a chain from the North pole of a strong bar magnet. What pole is induced at the TOP of the first paperclip (touching the magnet's North pole) and at the BOTTOM of the lowest paperclip?",
+        options: [
+          "Top of first paperclip: South pole (attracted to the magnet's North pole); Bottom of lowest paperclip: North pole",
+          "Top of first paperclip: North pole; Bottom of lowest paperclip: South pole",
+          "Both ends become North poles",
+          "Steel paperclips cannot become induced magnets"
+        ],
+        correct: 0,
+        insight: "Induced magnetism always causes attraction, so the end touching the magnet's North pole becomes an induced South pole, and the far end becomes a North pole."
+      },
+      {
+        id: "P7_Q10",
+        subtopic: "Permanent & Induced Magnets & Magnetic Fields",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "What is the difference between MAGNETICALLY SOFT materials (like pure iron) and MAGNETICALLY HARD materials (like steel)?",
+        options: [
+          "Magnetically soft iron magnetises easily and loses its magnetism quickly when the magnetising field is removed (ideal for transformer/electromagnet cores); magnetically hard steel is harder to magnetise but retains its magnetism to form permanent magnets",
+          "Magnetically soft iron can be squashed with your fingers; magnetically hard steel is non-magnetic",
+          "Pure iron makes permanent magnets; steel loses its magnetism immediately",
+          "Neither iron nor steel can be magnetised"
+        ],
+        correct: 0,
+        insight: "Soft iron = temporary/induced magnet (loses magnetism immediately when current switches off); hard steel = permanent magnet."
+      },
+      {
+        id: "P7_Q11",
+        subtopic: "Permanent & Induced Magnets & Magnetic Fields",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "What does a UNIFORM MAGNETIC FIELD (such as the field between two opposite flat magnetic poles placed close together) look like on a field line diagram?",
+        options: [
+          "Straight, parallel, evenly spaced field lines pointing from the North pole to the South pole",
+          "Concentric circles around a single point",
+          "Curved lines radiating outwards from a single South pole",
+          "Wavy lines that cross over each other"
+        ],
+        correct: 0,
+        insight: "Parallel, equally spaced field lines in the same direction indicate a uniform magnetic field (constant strength and direction everywhere in that region)."
+      },
+      {
+        id: "P7_Q12",
+        subtopic: "Permanent & Induced Magnets & Magnetic Fields",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "If a bar magnet is snapped cleanly in half across its middle, what is produced?",
+        options: [
+          "Two smaller complete bar magnets, each with its own North pole and South pole",
+          "One isolated North pole and one isolated South pole",
+          "Two completely non-magnetic pieces of metal",
+          "Only two South poles"
+        ],
+        correct: 0,
+        insight: "Magnetic poles always exist in North–South pairs (dipoles); breaking a magnet produces two smaller magnets, each with both a North and South pole."
+      },
+      {
+        id: "P7_Q13",
+        subtopic: "Permanent & Induced Magnets & Magnetic Fields",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "A plotting compass is placed directly ABOVE a bar magnet halfway between its North pole (on the left) and South pole (on the right). Which way does the North-seeking tip of the compass needle point?",
+        options: [
+          "To the RIGHT (towards the South pole of the bar magnet, following the field line from N to S)",
+          "To the LEFT (towards the North pole of the bar magnet)",
+          "Straight upwards towards the ceiling",
+          "It spins continuously"
+        ],
+        correct: 0,
+        insight: "Field lines outside a bar magnet run from North (left) to South (right), so a compass needle placed above the middle points right towards the South pole."
+      },
+      {
+        id: "P7_Q14",
+        subtopic: "Permanent & Induced Magnets & Magnetic Fields",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "Which type of force is magnetism classified as in AQA GCSE Physics?",
+        options: [
+          "A non-contact force (magnets exert forces on each other and on magnetic materials across empty space or air without touching)",
+          "A contact force (magnets must physically touch before any force acts)",
+          "A nuclear force",
+          "Air resistance"
+        ],
+        correct: 0,
+        insight: "AQA specification: Attraction and repulsion between two magnetic poles are examples of non-contact forces (alongside gravity and electrostatic forces)."
+      },
+      {
+        id: "P7_Q15",
+        subtopic: "Permanent & Induced Magnets & Magnetic Fields",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "Why does Earth's geographic North Pole actually correspond to a MAGNETIC SOUTH POLE?",
+        options: [
+          "Because the North-seeking pole of a freely suspended compass needle is attracted towards Earth's geographic North—and unlike magnetic poles attract!",
+          "Because compasses are manufactured backwards",
+          "Because Earth has two magnetic North poles",
+          "Because the Sun pulls compass needles northwards"
+        ],
+        correct: 0,
+        insight: "Since unlike poles attract, the North-seeking end of a compass needle is attracted to a magnetic South pole located near Earth's geographic North Pole."
+      },
+      {
+        id: "P7_Q16",
+        subtopic: "Permanent & Induced Magnets & Magnetic Fields",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "A student holds a permanent magnet near a brass door handle and then near a nickel coin. What happens in each case?",
+        options: [
+          "Brass door handle: no magnetic force (brass is an alloy of copper and zinc, which are non-magnetic); Nickel coin: attracted to the magnet because nickel is a magnetic material",
+          "Both the brass handle and the nickel coin are strongly repelled",
+          "Brass door handle: attracted; Nickel coin: repelled",
+          "Neither object experiences any magnetic force"
+        ],
+        correct: 0,
+        insight: "Nickel is one of the four magnetic materials (iron, steel, cobalt, nickel); brass (copper + zinc) is non-magnetic."
+      },
+
+      // ========================================================================
+      // 2. ELECTROMAGNETISM & SOLENOIDS (14 Questions)
+      // ========================================================================
+      {
+        id: "P7_Q17",
+        subtopic: "Electromagnetism & Solenoids",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "Describe the shape and strength of the magnetic field produced when a direct current flows through a long STRAIGHT CONDUCTING WIRE.",
+        options: [
+          "Concentric circles centred on the wire in a plane perpendicular to the wire; the magnetic field is strongest close to the wire and gets weaker (field lines get further apart) as distance from the wire increases",
+          "Straight lines running parallel to the wire in the same direction as the current",
+          "Uniform parallel lines pointing away from the wire at 45&deg;",
+          "A magnetic field is only produced when the current is switched off"
+        ],
+        correct: 0,
+        insight: "AQA specification exact wording: When a current flows through a conducting wire a magnetic field is produced around the wire. The shape of the magnetic field can be seen as a series of concentric circles in a plane, perpendicular to the wire. The strength of the magnetic field depends on the current through the wire and the distance from the wire."
+      },
+      {
+        id: "P7_Q18",
+        subtopic: "Electromagnetism & Solenoids",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "According to the RIGHT-HAND GRIP RULE, if a vertical wire carries conventional current UPWARDS (towards the ceiling), in which direction do the circular magnetic field lines point when viewed from ABOVE?",
+        options: [
+          "Anticlockwise",
+          "Clockwise",
+          "Straight upwards along the wire",
+          "Directly into the wire"
+        ],
+        correct: 0,
+        insight: "Right-Hand Grip Rule: Point your right thumb UPWARDS in the direction of conventional current (+ to &minus;); your fingers curl ANTICLOCKWISE around the wire."
+      },
+      {
+        id: "P7_Q19",
+        subtopic: "Electromagnetism & Solenoids",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "What happens to the magnetic field around a current-carrying wire when: (1) the size of the current is INCREASED, and (2) the direction of the current is REVERSED?",
+        options: [
+          "(1) Increasing the current increases the strength of the magnetic field (field lines move closer together); (2) Reversing the current reverses the direction of the magnetic field",
+          "(1) Increasing the current weakens the field; (2) Reversing the current has no effect on the field",
+          "(1) Increasing the current reverses the field; (2) Reversing the current turns the field off",
+          "Neither changing current size nor reversing current direction alters the magnetic field"
+        ],
+        correct: 0,
+        insight: "AQA specification: Changing the direction of the current changes the direction of the magnetic field produced by the current; increasing the current increases the strength of the magnetic field."
+      },
+      {
+        id: "P7_Q20",
+        subtopic: "Electromagnetism & Solenoids",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "What is a SOLENOID, and why does shaping a current-carrying wire into a solenoid increase the strength of the magnetic field?",
+        options: [
+          "A solenoid is a coil of wire; shaping the wire into a solenoid concentrates the magnetic field because the fields from each individual loop of wire add together (reinforcing each other inside the coil)",
+          "A solenoid is a permanent bar magnet; it increases field strength by cooling the wire",
+          "A solenoid is a single straight copper rod; it cancels out the magnetic field",
+          "A solenoid is an insulator that stops current flowing"
+        ],
+        correct: 0,
+        insight: "AQA specification exact wording: Shaping a wire to form a solenoid increases the strength of the magnetic field created by a current through the wire."
+      },
+      {
+        id: "P7_Q21",
+        subtopic: "Electromagnetism & Solenoids",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "Describe the magnetic field INSIDE a current-carrying solenoid compared to the magnetic field OUTSIDE the solenoid.",
+        options: [
+          "Inside a solenoid the magnetic field is STRONG and UNIFORM (having the same strength and direction at all points, shown by parallel evenly spaced lines); outside the solenoid the magnetic field has a similar shape to that of a BAR MAGNET",
+          "Inside a solenoid the magnetic field is zero; outside it is completely uniform",
+          "Inside a solenoid the field forms concentric circles; outside it forms parallel straight lines",
+          "Inside a solenoid the field points from South to North; outside it points from North to South"
+        ],
+        correct: 0,
+        insight: "AQA specification exact wording: The magnetic field inside a solenoid is strong and uniform: having the same strength and direction at every point. The magnetic field around a solenoid has a similar shape to that of a bar magnet."
+      },
+      {
+        id: "P7_Q22",
+        subtopic: "Electromagnetism & Solenoids",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "What is formed when an IRON CORE is placed inside a current-carrying solenoid, and why is SOFT IRON used rather than steel?",
+        options: [
+          "An ELECTROMAGNET is formed, which greatly increases the magnetic field strength; soft iron is used because it magnetises strongly when the current is switched on and loses its magnetism immediately when the current is switched off (unlike steel, which would remain permanently magnetised)",
+          "A permanent magnet is formed that can never be turned off",
+          "An insulator is formed that reduces the magnetic field to zero",
+          "Soft iron is used because iron has higher electrical resistance than copper"
+        ],
+        correct: 0,
+        insight: "AQA specification exact wording: Adding an iron core increases the strength of the magnetic field of a solenoid. An electromagnet is a solenoid with an iron core."
+      },
+      {
+        id: "P7_Q23",
+        subtopic: "Electromagnetism & Solenoids",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "State THREE ways to increase the strength of the magnetic field produced by an electromagnet.",
+        options: [
+          "1. Increase the current flowing through the coil; 2. Increase the number of turns on the coil (keeping length constant); 3. Insert a soft iron core inside the coil",
+          "1. Decrease the current; 2. Use fewer turns of wire; 3. Replace the iron core with wood",
+          "1. Use a thicker plastic coating on the wire; 2. Reverse the battery terminals; 3. Stretch the coil out into a straight line",
+          "1. Use a copper core; 2. Cool the magnet in ice; 3. Use alternating current only"
+        ],
+        correct: 0,
+        insight: "Three standard AQA ways to strengthen an electromagnet: larger current, more coil turns, and adding a soft iron core."
+      },
+      {
+        id: "P7_Q24",
+        subtopic: "Electromagnetism & Solenoids",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "Explain how an ELECTROMAGNETIC RELAY allows a low-current, low-voltage switch circuit (e.g. a car ignition key) to safely switch on a separate high-current circuit (e.g. a car starter motor).",
+        options: [
+          "Closing the low-current switch sends current through the relay's electromagnet coil, magnetising the iron core; this attracts a pivoted iron armature, which pushes the contacts of the high-current circuit together to complete it without the user touching high-voltage wires",
+          "The electromagnet melts the plastic insulation between the two circuits",
+          "The low-current circuit generates 230 V AC directly inside the key",
+          "The iron core repels the copper contacts apart"
+        ],
+        correct: 0,
+        insight: "Electromagnetic relays use a small current in an electromagnet to attract an iron armature and close a separate high-current switch."
+      },
+      {
+        id: "P7_Q25",
+        subtopic: "Electromagnetism & Solenoids",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "Why is an ELECTROMAGNET much more useful than a permanent magnet for lifting and moving scrap iron and steel in a scrapyard crane?",
+        options: [
+          "An electromagnet can be switched ON to pick up magnetic scrap metal and switched OFF to release and drop it into a container, and its magnetic strength can be varied by adjusting the current",
+          "An electromagnet also lifts aluminium, copper, and plastic waste",
+          "A permanent magnet only works indoors",
+          "An electromagnet requires no electrical power supply"
+        ],
+        correct: 0,
+        insight: "Controllability (switching on/off and adjusting strength) is the key advantage of electromagnets over permanent magnets."
+      },
+      {
+        id: "P7_Q26",
+        subtopic: "Electromagnetism & Solenoids",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "In a traditional ELECTRIC DOORBELL (make-and-break circuit), why does the hammer repeatedly strike the gong while the bell push is held down?",
+        options: [
+          "Pressing the switch energises the electromagnet, attracting the soft iron armature so the hammer hits the gong—but this movement breaks the contact, switching the electromagnet off so the springy strip pulls the armature back, re-making the circuit and repeating the cycle",
+          "The battery alternates between +12 V and &minus;12 V every 10 seconds",
+          "The gong is a permanent magnet that repels the hammer",
+          "The iron core permanently magnetises and locks the hammer against the gong"
+        ],
+        correct: 0,
+        insight: "Classic make-and-break electromagnetic doorbell mechanism: magnetise &rarr; attract &rarr; hit gong &rarr; break circuit &rarr; demagnetise &rarr; spring back &rarr; repeat."
+      },
+      {
+        id: "P7_Q27",
+        subtopic: "Electromagnetism & Solenoids",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "A student investigates how the number of turns on an electromagnet affects the number of steel paperclips it can pick up. Which variable MUST be kept constant as a CONTROL VARIABLE?",
+        options: [
+          "The current flowing through the coil (and the same soft iron core / size of paperclips)",
+          "The number of turns of wire on the coil",
+          "The number of paperclips picked up",
+          "The colour of the wire's plastic insulation"
+        ],
+        correct: 0,
+        insight: "Independent variable = number of turns; Dependent variable = number of paperclips lifted; Control variable = current (measured with an ammeter and adjusted using a variable resistor)."
+      },
+      {
+        id: "P7_Q28",
+        subtopic: "Electromagnetism & Solenoids",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "How can you determine which end of a current-carrying solenoid acts as the NORTH POLE?",
+        options: [
+          "Look end-on at the coil: if the conventional current flows ANTICLOCKWISE around that end, it is a NORTH pole (N); if current flows CLOCKWISE, it is a SOUTH pole (S) — or use a plotting compass",
+          "The end connected to the positive terminal of the battery is always the North pole regardless of winding direction",
+          "Both ends of a solenoid are North poles",
+          "Solenoids do not have North or South poles"
+        ],
+        correct: 0,
+        insight: "Looking end-on: Anticlockwise current = North pole; Clockwise current = South pole (or Right-Hand Grip Rule with fingers curling in current direction and thumb pointing to North pole)."
+      },
+      {
+        id: "P7_Q29",
+        subtopic: "Electromagnetism & Solenoids",
+        tier: "higher",
+        focusedDrill: false,
+        question: "In a circuit breaker protecting a household appliance, a surge in current causes the electromagnet to become strong enough to attract an iron catch and open the switch contacts. Why is a circuit breaker preferred over a traditional fuse?",
+        options: [
+          "A circuit breaker acts much faster and can simply be reset by flicking a switch once the fault is fixed, whereas a fuse wire melts and must be physically replaced",
+          "A circuit breaker uses no electromagnetism",
+          "A fuse increases the voltage in the house",
+          "A circuit breaker never trips during a short circuit"
+        ],
+        correct: 0,
+        insight: "Higher current &rarr; stronger electromagnet &rarr; trips iron latch &rarr; breaks circuit rapidly and is easily resettable."
+      },
+      {
+        id: "P7_Q30",
+        subtopic: "Electromagnetism & Solenoids",
+        tier: "foundation",
+        focusedDrill: false,
+        question: "When constructing an electromagnet, why must INSULATED copper wire be wound around the iron nail rather than bare uninsulated copper wire?",
+        options: [
+          "Without insulation, the current would short-circuit straight through the conductive iron nail and adjacent touching turns of wire instead of flowing around every loop of the coil",
+          "Bare copper wire is magnetic and cancels out the iron nail",
+          "Plastic insulation increases the voltage of the battery",
+          "Bare copper wire cannot carry an electric current"
+        ],
+        correct: 0,
+        insight: "Insulation prevents short circuits across the iron core and between neighbouring turns, forcing current through all N loops."
+      },
+
+      // ========================================================================
+      // 3. FLEMING'S LEFT-HAND RULE & THE MOTOR EFFECT (18 Questions)
+      // ========================================================================
+      {
+        id: "P7_Q31",
+        subtopic: "Fleming's Left-Hand Rule & The Motor Effect",
+        tier: "higher",
+        focusedDrill: true,
+        question: "What is the MOTOR EFFECT in AQA Physics?",
+        options: [
+          "When a conductor carrying a current is placed in a magnetic field, the magnet producing the field and the conductor exert a force on each other (due to the interaction between the wire's circular magnetic field and the external magnetic field)",
+          "When a magnet is moved inside a coil of wire to induce an alternating voltage",
+          "When a transformer steps down mains voltage from 230 V to 12 V",
+          "When two permanent magnets attract each other in a vacuum"
+        ],
+        correct: 0,
+        insight: "AQA Higher Tier exact wording: When a conductor carrying a current is placed in a magnetic field the magnet producing the field and the conductor exert a force on each other. This is called the motor effect."
+      },
+      {
+        id: "P7_Q32",
+        subtopic: "Fleming's Left-Hand Rule & The Motor Effect",
+        tier: "higher",
+        focusedDrill: true,
+        question: "In FLEMING'S LEFT-HAND RULE, what do the ThuMb, First finger, and seCond finger represent when held mutually perpendicular (at 90&deg;) to each other?",
+        options: [
+          "ThuMb = Motion / Force direction; First finger = Magnetic Field direction (North &rarr; South); seCond finger = Conventional Current direction (+ &rarr; &minus;)",
+          "ThuMb = Current; First finger = Motion; seCond finger = Magnetic Field (South &rarr; North)",
+          "ThuMb = Magnetic Field; First finger = Electron flow; seCond finger = Voltage",
+          "ThuMb = Resistance; First finger = Power; seCond finger = Force"
+        ],
+        correct: 0,
+        insight: "Memory aid: thuMb = Motion/Force, First finger = Field (N to S), seCond finger = Current (+ to &minus;). Always use your LEFT hand for the motor effect!"
+      },
+      {
+        id: "P7_Q33",
+        subtopic: "Fleming's Left-Hand Rule & The Motor Effect",
+        tier: "higher",
+        focusedDrill: true,
+        question: "A horizontal wire carries conventional current from LEFT to RIGHT through a uniform magnetic field pointing vertically DOWNWARDS (from a North pole above to a South pole below). Using Fleming's Left-Hand Rule, which way is the FORCE on the wire?",
+        options: [
+          "INTO the page / away from you",
+          "OUT of the page / towards you",
+          "Vertically UPWARDS",
+          "There is zero force on the wire"
+        ],
+        correct: 0,
+        insight: "Left hand: First finger (Field) points DOWN, seCond finger (Current) points RIGHT &rArr; thuMb (Force/Motion) points INTO the page (away from you)."
+      },
+      {
+        id: "P7_Q34",
+        subtopic: "Fleming's Left-Hand Rule & The Motor Effect",
+        tier: "higher",
+        focusedDrill: true,
+        question: "A straight copper wire is placed inside a uniform magnetic field so that the wire is PARALLEL to the magnetic field lines. What is the magnitude of the magnetic force acting on the wire when a current of 5.0 A flows through it?",
+        options: [
+          "0 N (zero force — a current-carrying conductor experiences zero magnetic force when it is parallel to the magnetic field, and maximum force when at 90&deg; to the field)",
+          "5.0 N",
+          "Maximum possible force",
+          "2.5 N"
+        ],
+        correct: 0,
+        insight: "Key AQA Higher Tier rule: The equation F = B I l applies when the conductor is at right angles (90&deg;) to the magnetic field. When parallel to the magnetic field, the force is ZERO (0 N)."
+      },
+      {
+        id: "P7_Q35",
+        subtopic: "Fleming's Left-Hand Rule & The Motor Effect",
+        tier: "higher",
+        focusedDrill: true,
+        question: "A straight wire of length 0.40 m carries a current of 3.5 A at right angles (90&deg;) to a uniform magnetic field of magnetic flux density 0.25 T. Calculate the FORCE acting on the wire.<br><span style='font-size:0.86rem; color:#1e40af;'>Equation: F = B I l</span>",
+        options: [
+          "0.35 N",
+          "3.5 N",
+          "0.035 N",
+          "5.6 N"
+        ],
+        correct: 0,
+        insight: "F = B &times; I &times; l = 0.25 &times; 3.5 &times; 0.40 = 0.35 N."
+      },
+      {
+        id: "P7_Q36",
+        subtopic: "Fleming's Left-Hand Rule & The Motor Effect",
+        tier: "higher",
+        focusedDrill: true,
+        question: "A wire of length 15 cm carries a current of 400 mA at right angles to a uniform magnetic field of flux density 0.80 T. Calculate the magnetic force on the wire.",
+        options: [
+          "0.048 N (converting 15 cm = 0.15 m and 400 mA = 0.40 A)",
+          "4800 N",
+          "4.8 N",
+          "0.48 N"
+        ],
+        correct: 0,
+        insight: "Convert to SI units first! l = 15 cm = 0.15 m; I = 400 mA = 0.40 A. Then F = 0.80 &times; 0.40 &times; 0.15 = 0.048 N."
+      },
+      {
+        id: "P7_Q37",
+        subtopic: "Fleming's Left-Hand Rule & The Motor Effect",
+        tier: "higher",
+        focusedDrill: true,
+        question: "A conductor of length 0.25 m carrying a current of 4.0 A at 90&deg; to a uniform magnetic field experiences a force of 0.60 N. Calculate the MAGNETIC FLUX DENSITY (B) of the field, including its correct SI unit.",
+        options: [
+          "0.60 T (Tesla)",
+          "0.060 T (Tesla)",
+          "1.67 T (Tesla)",
+          "0.60 Wb (Weber)"
+        ],
+        correct: 0,
+        insight: "Rearranging F = B I l gives B = F &divide; (I &times; l) = 0.60 &divide; (4.0 &times; 0.25) = 0.60 &divide; 1.0 = 0.60 T (Tesla)."
+      },
+      {
+        id: "P7_Q38",
+        subtopic: "Fleming's Left-Hand Rule & The Motor Effect",
+        tier: "higher",
+        focusedDrill: true,
+        question: "A wire of length 0.50 m placed at right angles to a magnetic field of flux density 0.12 T experiences a force of 0.18 N. Calculate the CURRENT flowing in the wire.",
+        options: [
+          "3.0 A",
+          "0.33 A",
+          "0.0108 A",
+          "1.5 A"
+        ],
+        correct: 0,
+        insight: "Rearranging F = B I l gives I = F &divide; (B &times; l) = 0.18 &divide; (0.12 &times; 0.50) = 0.18 &divide; 0.060 = 3.0 A."
+      },
+      {
+        id: "P7_Q39",
+        subtopic: "Fleming's Left-Hand Rule & The Motor Effect",
+        tier: "higher",
+        focusedDrill: true,
+        question: "What is the effective LENGTH of a conductor inside a magnetic field of flux density 0.30 T if it carries a current of 2.0 A at 90&deg; to the field and experiences a force of 0.090 N?",
+        options: [
+          "0.15 m (15 cm)",
+          "0.054 m",
+          "6.7 m",
+          "1.5 m"
+        ],
+        correct: 0,
+        insight: "l = F &divide; (B &times; I) = 0.090 &divide; (0.30 &times; 2.0) = 0.090 &divide; 0.60 = 0.15 m."
+      },
+      {
+        id: "P7_Q40",
+        subtopic: "Fleming's Left-Hand Rule & The Motor Effect",
+        tier: "higher",
+        focusedDrill: true,
+        question: "Explain why a rectangular loop of wire carrying a direct current inside a uniform magnetic field ROTATES.",
+        options: [
+          "Current flows in opposite directions along the two opposite sides of the coil perpendicular to the magnetic field; by Fleming's Left-Hand Rule, one side experiences an upward force and the other side experiences an equal downward force, creating a turning effect (moment/couple) about the axle",
+          "Both sides of the coil are pushed upwards at the same time",
+          "The magnetic field melts one side of the coil",
+          "The battery spins around the magnet"
+        ],
+        correct: 0,
+        insight: "AQA Higher Tier exact explanation: A coil of wire carrying a current in a magnetic field tends to rotate. This is the basis of an electric motor."
+      },
+      {
+        id: "P7_Q41",
+        subtopic: "Fleming's Left-Hand Rule & The Motor Effect",
+        tier: "higher",
+        focusedDrill: true,
+        question: "What is the exact role of the SPLIT-RING COMMUTATOR (and carbon brushes) in a simple DC electric motor?",
+        options: [
+          "It reverses the direction of the current in the coil every half-turn (180&deg;) as the coil passes the vertical position, ensuring the forces on the left and right sides keep pushing the coil in the SAME rotational direction continuously",
+          "It converts alternating current (AC) from the mains into high-voltage radio waves",
+          "It stops the coil completely after one half-turn",
+          "It increases the resistance of the coil to prevent it from spinning"
+        ],
+        correct: 0,
+        insight: "Without a split-ring commutator, the coil would overshoot the vertical position and be pushed back the other way, oscillating back and forth instead of rotating continuously."
+      },
+      {
+        id: "P7_Q42",
+        subtopic: "Fleming's Left-Hand Rule & The Motor Effect",
+        tier: "higher",
+        focusedDrill: true,
+        question: "State THREE ways to make a simple DC electric motor spin FASTER (increase the turning force on the coil).",
+        options: [
+          "1. Increase the current in the coil; 2. Use stronger magnets (higher magnetic flux density B); 3. Increase the number of turns on the coil (or increase the area/length of the coil in the field)",
+          "1. Decrease the current; 2. Move the magnets further apart; 3. Remove half the coil turns",
+          "1. Reverse the battery polarity; 2. Remove the split-ring commutator; 3. Use thicker plastic insulation",
+          "1. Align the magnetic field parallel to the axle; 2. Use non-magnetic brass magnets; 3. Lower the supply p.d."
+        ],
+        correct: 0,
+        insight: "From F = B I l, increasing B (stronger magnets), I (larger current), or l (more turns of wire) increases the force F and turning moment."
+      },
+      {
+        id: "P7_Q43",
+        subtopic: "Fleming's Left-Hand Rule & The Motor Effect",
+        tier: "higher",
+        focusedDrill: true,
+        question: "How can you reverse the DIRECTION OF ROTATION of a simple DC electric motor?",
+        options: [
+          "Reverse the direction of the current (swap the battery connections) OR reverse the direction of the magnetic field (swap the North and South poles)—doing BOTH at the same time keeps the rotation in the original direction",
+          "Reverse BOTH the current and the magnetic field at the same time",
+          "Double the number of turns on the coil",
+          "Increase the battery voltage from 6 V to 12 V"
+        ],
+        correct: 0,
+        insight: "Reversing either current OR field reverses the force direction; reversing both cancels out and keeps the original spin direction."
+      },
+      {
+        id: "P7_Q44",
+        subtopic: "Fleming's Left-Hand Rule & The Motor Effect",
+        tier: "higher",
+        focusedDrill: true,
+        question: "In an experiment to measure magnetic flux density B, a U-shaped magnet sits on a top-pan digital balance (tared to 0.00 g). A horizontal wire passes between the poles without touching the magnet. When a current of 4.0 A flows through the wire, the balance reading increases to +1.20 g (an upward force of 0.012 N on the wire, so an equal downward reaction force on the magnet by Newton's Third Law). If 5.0 cm of wire is inside the field, calculate B.",
+        options: [
+          "0.060 T",
+          "0.60 T",
+          "0.0060 T",
+          "2.4 T"
+        ],
+        correct: 0,
+        insight: "5.0 cm = 0.050 m. B = F &divide; (I &times; l) = 0.012 &divide; (4.0 &times; 0.050) = 0.012 &divide; 0.20 = 0.060 T. (Also tests Newton's 3rd Law: magnet pushes wire up, wire pushes magnet down!)"
+      },
+      {
+        id: "P7_Q45",
+        subtopic: "Fleming's Left-Hand Rule & The Motor Effect",
+        tier: "higher",
+        focusedDrill: true,
+        question: "What does the quantity MAGNETIC FLUX DENSITY (B) measure, and what is its SI unit?",
+        options: [
+          "A measure of the strength of a magnetic field (specifically the force per unit current per unit length on a conductor at 90&deg; to the field), measured in TESLA (T)",
+          "The total electrical charge flowing in a wire, measured in Coulombs (C)",
+          "The electrical resistance of a solenoid, measured in Ohms (&Omega;)",
+          "The number of turns on a transformer coil, measured in Hertz (Hz)"
+        ],
+        correct: 0,
+        insight: "AQA specification: Magnetic flux density B is measured in tesla, T (where 1 T = 1 N / (A&middot;m))."
+      },
+      {
+        id: "P7_Q46",
+        subtopic: "Fleming's Left-Hand Rule & The Motor Effect",
+        tier: "higher",
+        focusedDrill: true,
+        question: "A vertical wire carries conventional current DOWNWARDS. A permanent magnet has its North pole to the WEST (left) and South pole to the EAST (right), so the magnetic field points to the EAST. Which direction is the force on the wire?",
+        options: [
+          "SOUTH (out of the page / towards you)",
+          "NORTH (into the page / away from you)",
+          "WEST (towards the North pole)",
+          "EAST (towards the South pole)"
+        ],
+        correct: 0,
+        insight: "Left hand: First finger (Field) points EAST (right), seCond finger (Current) points DOWN &rArr; thuMb (Force) points OUT of the page (SOUTH)."
+      },
+      {
+        id: "P7_Q47",
+        subtopic: "Fleming's Left-Hand Rule & The Motor Effect",
+        tier: "higher",
+        focusedDrill: true,
+        question: "A square coil of side 0.10 m has 20 turns of wire and carries a current of 1.5 A inside a uniform magnetic field of 0.40 T. Calculate the magnitude of the magnetic force acting on ONE side of the coil that is perpendicular to the field.",
+        options: [
+          "1.2 N (total effective length = 20 turns &times; 0.10 m = 2.0 m)",
+          "0.060 N",
+          "12 N",
+          "0.60 N"
+        ],
+        correct: 0,
+        insight: "With N = 20 turns, the total length of wire in the field on that side is l = 20 &times; 0.10 = 2.0 m. F = B &times; I &times; l = 0.40 &times; 1.5 &times; 2.0 = 1.2 N."
+      },
+      {
+        id: "P7_Q48",
+        subtopic: "Fleming's Left-Hand Rule & The Motor Effect",
+        tier: "higher",
+        focusedDrill: true,
+        question: "In a DC electric motor, at the exact instant the rotating coil passes through the VERTICAL position (perpendicular to the magnetic field), the split-ring commutator momentarily breaks contact with the brushes so current drops to zero. Why does the coil continue turning past the vertical position?",
+        options: [
+          "Because of the momentum / inertia of the spinning coil, which carries it past the gap until the split ring reconnects with reversed current",
+          "Because gravity pulls the top of the coil sideways",
+          "Because the magnets switch their North and South poles",
+          "Because air resistance pushes the coil forward"
+        ],
+        correct: 0,
+        insight: "The coil's rotational momentum carries it across the brief commutator gap, after which the reversed current keeps torque in the same direction."
+      },
+
+      // ========================================================================
+      // 4. LOUDSPEAKERS, MICROPHONES & THE GENERATOR EFFECT [8463] (14 Questions)
+      // ========================================================================
+      {
+        id: "P7_Q49",
+        subtopic: "Loudspeakers, Microphones & The Generator Effect",
+        tier: "triple",
+        focusedDrill: false,
+        question: "Explain how a MOVING-COIL LOUDSPEAKER uses the motor effect to convert variations in an alternating electrical current into sound waves.",
+        options: [
+          "Alternating current (AC) flows through a coil attached to a paper cone inside a permanent magnet's radial magnetic field; this produces a varying force on the coil (by the motor effect) that reverses direction as the AC reverses, making the coil and cone vibrate back and forth at the frequency of the AC and creating longitudinal pressure variations (sound waves) in the air",
+          "Sound waves hit the paper cone and induce a direct current in the permanent magnet",
+          "A transformer inside the loudspeaker heats the air to 500 &deg;C",
+          "Direct current holds the cone stationary against the magnet"
+        ],
+        correct: 0,
+        insight: "AQA 8463 exact specification explanation: Loudspeakers and headphones use the motor effect to convert variations in current in electrical circuits to the pressure variations in sound waves."
+      },
+      {
+        id: "P7_Q50",
+        subtopic: "Loudspeakers, Microphones & The Generator Effect",
+        tier: "triple",
+        focusedDrill: false,
+        question: "In a moving-coil loudspeaker, what happens to the sound wave produced if: (1) the FREQUENCY of the alternating current is doubled, and (2) the AMPLITUDE of the alternating current is increased?",
+        options: [
+          "(1) The pitch of the sound becomes higher (frequency of sound waves doubles); (2) The sound becomes louder (cone vibrates with greater amplitude)",
+          "(1) The sound becomes louder; (2) The pitch becomes higher",
+          "(1) The sound becomes quieter; (2) The pitch becomes lower",
+          "Neither changing AC frequency nor AC amplitude changes the sound"
+        ],
+        correct: 0,
+        insight: "Frequency of AC = frequency/pitch of sound wave; amplitude of AC = amplitude/loudness of sound wave."
+      },
+      {
+        id: "P7_Q51",
+        subtopic: "Loudspeakers, Microphones & The Generator Effect",
+        tier: "triple",
+        focusedDrill: true,
+        question: "What is the GENERATOR EFFECT (electromagnetic induction) in AQA Separate Physics (8463)?",
+        options: [
+          "If an electrical conductor moves relative to a magnetic field (cutting magnetic field lines) OR if there is a change in the magnetic field around a conductor, a potential difference is induced across the ends of the conductor—and if the conductor is part of a complete circuit, a current is induced",
+          "When a current-carrying wire experiences a force inside a magnetic field",
+          "When a permanent magnet loses its magnetism upon heating",
+          "When a soft iron core attracts steel paperclips"
+        ],
+        correct: 0,
+        insight: "AQA 8463 exact wording: If an electrical conductor moves relative to a magnetic field or if there is a change in the magnetic field around a conductor, a potential difference is induced across the ends of the conductor. If the conductor is part of a complete circuit, a current is induced in the conductor. This is called the generator effect."
+      },
+      {
+        id: "P7_Q52",
+        subtopic: "Loudspeakers, Microphones & The Generator Effect",
+        tier: "triple",
+        focusedDrill: true,
+        question: "A student holds a bar magnet completely STATIONARY inside the middle of a coil of wire connected to a sensitive centre-zero voltmeter. What is the reading on the voltmeter, and why?",
+        options: [
+          "0 V (zero induced potential difference) — a potential difference is only induced when there is relative movement or a CHANGING magnetic field cutting the turns of the coil",
+          "+5.0 V steady reading",
+          "An alternating reading between +2.0 V and &minus;2.0 V",
+          "&minus;12 V steady reading"
+        ],
+        correct: 0,
+        insight: "No relative motion = no change in magnetic flux linkage = ZERO induced p.d.!"
+      },
+      {
+        id: "P7_Q53",
+        subtopic: "Loudspeakers, Microphones & The Generator Effect",
+        tier: "triple",
+        focusedDrill: true,
+        question: "State THREE ways to INCREASE the size of the induced potential difference (and induced current) in the generator effect.",
+        options: [
+          "1. Move the magnet or conductor FASTER; 2. Use a STRONGER magnet (higher magnetic flux density); 3. Use a coil with MORE TURNS of wire (or larger coil area)",
+          "1. Move the magnet slower; 2. Use a weaker magnet; 3. Use fewer turns on the coil",
+          "1. Hold the magnet completely still; 2. Replace the copper wire with plastic; 3. Cool the voltmeter",
+          "1. Move the wire parallel to the magnetic field lines; 2. Increase the resistance of the voltmeter; 3. Use a wooden core"
+        ],
+        correct: 0,
+        insight: "Increasing rate of cutting magnetic field lines (speed, magnet strength, or number of turns) increases the induced potential difference."
+      },
+      {
+        id: "P7_Q54",
+        subtopic: "Loudspeakers, Microphones & The Generator Effect",
+        tier: "triple",
+        focusedDrill: true,
+        question: "According to LENZ'S LAW (AQA specification), in which direction does an induced current always act when a North pole of a bar magnet is pushed INTO a solenoid?",
+        options: [
+          "The induced current generates a magnetic field that OPPOSES the original change producing it—so the end of the solenoid facing the approaching magnet becomes a NORTH pole to repel the incoming North pole (requiring mechanical work to be done)",
+          "The induced current generates a South pole to pull the North pole in faster for free",
+          "The induced current flows in a random direction unrelated to the magnet's motion",
+          "No current is induced when a North pole enters a coil"
+        ],
+        correct: 0,
+        insight: "AQA 8463 exact specification point: An induced current generates a magnetic field that opposes the original change, either the movement of the conductor or the change in magnetic field. (This upholds conservation of energy!)"
+      },
+      {
+        id: "P7_Q55",
+        subtopic: "Loudspeakers, Microphones & The Generator Effect",
+        tier: "triple",
+        focusedDrill: true,
+        question: "Compare the electrical output and commutator design of an ALTERNATOR versus a DYNAMO.",
+        options: [
+          "An alternator uses SLIP RINGS and brushes to generate ALTERNATING CURRENT (AC, reversing direction every half-turn); a dynamo uses a SPLIT-RING COMMUTATOR to generate pulsating DIRECT CURRENT (DC, always flowing in the same direction)",
+          "An alternator uses a split-ring commutator to produce DC; a dynamo uses slip rings to produce AC",
+          "Both alternators and dynamos use slip rings and produce steady battery DC",
+          "Neither alternators nor dynamos use rotating coils in a magnetic field"
+        ],
+        correct: 0,
+        insight: "AQA 8463 exact wording: The generator effect is used in an alternator to generate ac and in a dynamo to generate dc."
+      },
+      {
+        id: "P7_Q56",
+        subtopic: "Loudspeakers, Microphones & The Generator Effect",
+        tier: "triple",
+        focusedDrill: true,
+        question: "An oscilloscope displays the sinusoidal AC potential difference–time trace from a spinning alternator: peak p.d. = 4.0 V and time period T = 0.040 s (frequency = 25 Hz). If the alternator coil is then spun at TWICE the speed (50 Hz), what are the NEW peak p.d. and NEW time period?",
+        options: [
+          "New peak p.d. = 8.0 V (doubles because field lines are cut twice as fast) and new time period T = 0.020 s (halves because frequency doubles)",
+          "New peak p.d. = 4.0 V (unchanged) and new time period T = 0.020 s",
+          "New peak p.d. = 8.0 V and new time period T = 0.080 s",
+          "New peak p.d. = 2.0 V and new time period T = 0.020 s"
+        ],
+        correct: 0,
+        insight: "Classic AQA 8463 oscilloscope question! Doubling rotation speed doubles BOTH the frequency (halving the period T from 0.040 s to 0.020 s) AND the rate of cutting flux (doubling peak p.d. from 4.0 V to 8.0 V)."
+      },
+      {
+        id: "P7_Q57",
+        subtopic: "Loudspeakers, Microphones & The Generator Effect",
+        tier: "triple",
+        focusedDrill: false,
+        question: "Explain how a MOVING-COIL MICROPHONE uses the generator effect to convert sound waves into an electrical signal.",
+        options: [
+          "Sound waves hit a flexible diaphragm, causing the diaphragm and an attached coil of wire to vibrate back and forth inside the magnetic field of a permanent magnet; as the coil cuts the magnetic field lines, an alternating potential difference (and alternating current) of the same frequency as the sound wave is induced across the coil",
+          "Sound waves heat up a thermocouple inside the microphone",
+          "A battery sends high-voltage AC through the diaphragm to vibrate the air",
+          "Sound waves compress a permanent magnet to generate X-rays"
+        ],
+        correct: 0,
+        insight: "AQA 8463 exact wording: Microphones use the generator effect to convert the pressure variations in sound waves into variations in current in electrical circuits."
+      },
+      {
+        id: "P7_Q58",
+        subtopic: "Loudspeakers, Microphones & The Generator Effect",
+        tier: "triple",
+        focusedDrill: true,
+        question: "At which position of a spinning rectangular alternator coil is the induced potential difference at its MAXIMUM peak value?",
+        options: [
+          "When the plane of the coil is HORIZONTAL (parallel to the magnetic field lines), because the long sides of the coil are moving vertically at 90&deg; across the field lines, cutting magnetic field lines at the maximum rate",
+          "When the plane of the coil is vertical (perpendicular to the magnetic field lines)",
+          "When the coil is stationary",
+          "When the slip rings are removed"
+        ],
+        correct: 0,
+        insight: "When the coil is horizontal (parallel to B), its top and bottom sides move perpendicular to B (maximum cutting rate &rArr; peak p.d.); when vertical, the sides momentarily move parallel to B (zero cutting rate &rArr; 0 V)."
+      },
+      {
+        id: "P7_Q59",
+        subtopic: "Loudspeakers, Microphones & The Generator Effect",
+        tier: "triple",
+        focusedDrill: true,
+        question: "A bar magnet is dropped vertically through a horizontal copper ring. Compared to dropping the same magnet through a plastic ring of identical size, why does the magnet fall MORE SLOWLY through the copper ring?",
+        options: [
+          "The falling magnet induces an eddy current in the conducting copper ring, which creates a magnetic field that opposes the motion of the magnet (upward magnetic braking force); plastic is an insulator so no current is induced",
+          "Copper is strongly attracted to all magnets like iron",
+          "The plastic ring pushes the magnet downwards",
+          "Gravity does not act inside a copper ring"
+        ],
+        correct: 0,
+        insight: "Lenz's Law in action: induced current in the copper conductor opposes the magnet's downward motion."
+      },
+      {
+        id: "P7_Q60",
+        subtopic: "Loudspeakers, Microphones & The Generator Effect",
+        tier: "triple",
+        focusedDrill: true,
+        question: "A bar magnet is pushed into a coil at speed v, inducing a peak reading of +1.5 V on a data logger. The magnet is then pulled OUT of the same end of the coil at speed 2v. What is the new peak reading?",
+        options: [
+          "&minus;3.0 V (opposite sign because direction of motion reversed, and double magnitude because speed doubled)",
+          "+3.0 V",
+          "&minus;1.5 V",
+          "+0.75 V"
+        ],
+        correct: 0,
+        insight: "Reversing direction reverses the polarity of induced p.d. (+ to &minus;), and doubling speed doubles its magnitude (1.5 V &rarr; 3.0 V)."
+      },
+      {
+        id: "P7_Q61",
+        subtopic: "Loudspeakers, Microphones & The Generator Effect",
+        tier: "triple",
+        focusedDrill: true,
+        question: "What does the oscilloscope p.d.–time graph of a simple single-coil DYNAMO look like as the coil rotates continuously at a steady speed?",
+        options: [
+          "A series of positive half-sine pulses that rise from 0 V to a peak and fall back to 0 V every half-turn, never crossing below 0 V into negative values",
+          "A flat horizontal line at +6.0 V",
+          "A sine wave oscillating symmetrically between +6.0 V and &minus;6.0 V",
+          "A vertical straight line"
+        ],
+        correct: 0,
+        insight: "Because the split-ring commutator swaps connections every half-turn just as the coil's induced p.d. reverses, the output remains unidirectional (always positive, pulsating DC)."
+      },
+      {
+        id: "P7_Q62",
+        subtopic: "Loudspeakers, Microphones & The Generator Effect",
+        tier: "triple",
+        focusedDrill: false,
+        question: "Why does a moving-coil loudspeaker use a RADIAL (cylindrical) permanent magnet with a central pole surrounded by an outer ring pole?",
+        options: [
+          "So that the magnetic field lines always cut the circular voice coil at 90&deg; (perpendicular) throughout its full back-and-forth motion, giving a uniform force proportional to the current",
+          "So that the coil is always parallel to the magnetic field",
+          "To prevent any sound from escaping the back of the speaker",
+          "To convert the permanent magnet into an insulator"
+        ],
+        correct: 0,
+        insight: "A radial magnetic field keeps the coil perpendicular to B at every point in its vibration stroke."
+      },
+
+      // ========================================================================
+      // 5. TRANSFORMERS & THE NATIONAL GRID [SEPARATE PHYSICS 8463] (14 Questions)
+      // ========================================================================
+      {
+        id: "P7_Q63",
+        subtopic: "Transformers & The National Grid",
+        tier: "triple",
+        focusedDrill: false,
+        question: "Describe the basic structure of a TRANSFORMER and explain why the core is made of SOFT IRON.",
+        options: [
+          "A primary coil and a secondary coil wound on an iron core; iron is used because it is easily magnetised and demagnetised (magnetically soft), concentrating and transferring the changing magnetic field from the primary coil to the secondary coil",
+          "Two permanent steel bar magnets separated by an air gap; iron is used because it is an electrical insulator",
+          "A single copper wire wrapped around a wooden block; iron is used to store chemical energy",
+          "Two plastic coils around a brass core"
+        ],
+        correct: 0,
+        insight: "AQA 8463 exact wording: A basic transformer consists of a primary coil and a secondary coil wound on an iron core. Iron is easily magnetised."
+      },
+      {
+        id: "P7_Q64",
+        subtopic: "Transformers & The National Grid",
+        tier: "triple",
+        focusedDrill: true,
+        question: "Explain in 4 clear steps why a transformer ONLY works with ALTERNATING CURRENT (AC) and produces 0 V output if connected to a steady DIRECT CURRENT (DC) battery.",
+        options: [
+          "1. Alternating current in the primary coil produces a continuously CHANGING magnetic field in the soft iron core; 2. This changing magnetic field passes through the secondary coil; 3. By the generator effect, the changing magnetic field induces an alternating potential difference across the secondary coil; 4. Steady DC produces a constant (unchanging) magnetic field, so zero p.d. is induced",
+          "DC cannot flow through copper wire; AC melts the iron core so electrons can jump across",
+          "DC creates a magnetic field that is too strong for the secondary coil",
+          "Transformers actually work identically with both steady DC and AC"
+        ],
+        correct: 0,
+        insight: "Classic AQA 8463 4-mark explanation! Key words: alternating current in primary &rarr; changing magnetic field in iron core &rarr; cuts secondary coil &rarr; induces alternating p.d. across secondary coil."
+      },
+      {
+        id: "P7_Q65",
+        subtopic: "Transformers & The National Grid",
+        tier: "triple",
+        focusedDrill: true,
+        question: "How do the number of turns on the primary coil (n<sub>p</sub>) and secondary coil (n<sub>s</sub>) compare in a STEP-UP transformer versus a STEP-DOWN transformer?",
+        options: [
+          "In a step-up transformer, n<sub>s</sub> &gt; n<sub>p</sub> (more turns on the secondary coil, so V<sub>s</sub> &gt; V<sub>p</sub>); in a step-down transformer, n<sub>s</sub> &lt; n<sub>p</sub> (fewer turns on the secondary coil, so V<sub>s</sub> &lt; V<sub>p</sub>)",
+          "In a step-up transformer, n<sub>s</sub> &lt; n<sub>p</sub>; in a step-down transformer, n<sub>s</sub> &gt; n<sub>p</sub>",
+          "Both step-up and step-down transformers have n<sub>p</sub> = n<sub>s</sub>",
+          "A step-up transformer has no secondary coil"
+        ],
+        correct: 0,
+        insight: "AQA 8463 exact specification points: In a step-up transformer V<sub>s</sub> &gt; V<sub>p</sub>; in a step-down transformer V<sub>s</sub> &lt; V<sub>p</sub>."
+      },
+      {
+        id: "P7_Q66",
+        subtopic: "Transformers & The National Grid",
+        tier: "triple",
+        focusedDrill: true,
+        question: "A step-down transformer has 4600 turns on its primary coil and 240 turns on its secondary coil. If the primary coil is connected to the 230 V AC mains supply, calculate the secondary potential difference V<sub>s</sub>.<br><span style='font-size:0.86rem; color:#1e40af;'>Equation: V<sub>p</sub> / V<sub>s</sub> = n<sub>p</sub> / n<sub>s</sub></span>",
+        options: [
+          "12 V",
+          "4408 V",
+          "20 V",
+          "24 V"
+        ],
+        correct: 0,
+        insight: "230 / V<sub>s</sub> = 4600 / 240 = 19.167 &rArr; V<sub>s</sub> = 230 &times; 240 &divide; 4600 = 12 V."
+      },
+      {
+        id: "P7_Q67",
+        subtopic: "Transformers & The National Grid",
+        tier: "triple",
+        focusedDrill: true,
+        question: "A power station step-up transformer increases an alternating potential difference from 25 kV (25,000 V) to 400 kV (400,000 V). If the primary coil has 1500 turns, how many turns must the secondary coil have?",
+        options: [
+          "24,000 turns",
+          "94 turns",
+          "16,000 turns",
+          "60,000 turns"
+        ],
+        correct: 0,
+        insight: "n<sub>s</sub> = n<sub>p</sub> &times; (V<sub>s</sub> / V<sub>p</sub>) = 1500 &times; (400,000 / 25,000) = 1500 &times; 16 = 24,000 turns."
+      },
+      {
+        id: "P7_Q68",
+        subtopic: "Transformers & The National Grid",
+        tier: "triple",
+        focusedDrill: true,
+        question: "A transformer is assumed to be 100% efficient. Its primary coil is connected to 230 V AC and draws a current of 0.25 A. If the secondary potential difference is 11.5 V, calculate the secondary current I<sub>s</sub>.<br><span style='font-size:0.86rem; color:#1e40af;'>Equation: V<sub>p</sub> I<sub>p</sub> = V<sub>s</sub> I<sub>s</sub></span>",
+        options: [
+          "5.0 A",
+          "0.0125 A",
+          "2.5 A",
+          "0.20 A"
+        ],
+        correct: 0,
+        insight: "Input power = Output power: 230 &times; 0.25 = 11.5 &times; I<sub>s</sub> &rArr; 57.5 = 11.5 &times; I<sub>s</sub> &rArr; I<sub>s</sub> = 57.5 &divide; 11.5 = 5.0 A."
+      },
+      {
+        id: "P7_Q69",
+        subtopic: "Transformers & The National Grid",
+        tier: "triple",
+        focusedDrill: true,
+        question: "A step-up transformer at a power station delivers 800 MW of electrical power at 400,000 V (400 kV) into the National Grid transmission cables. Assuming 100% efficiency, calculate the current flowing in the transmission cables.",
+        options: [
+          "2000 A",
+          "0.00050 A",
+          "2.0 A",
+          "3.2 &times; 10<sup>14</sup> A"
+        ],
+        correct: 0,
+        insight: "800 MW = 800,000,000 W (8.0 &times; 10<sup>8</sup> W). Using P = V I: I = (8.0 &times; 10<sup>8</sup>) &divide; (4.0 &times; 10<sup>5</sup>) = 2000 A."
+      },
+      {
+        id: "P7_Q70",
+        subtopic: "Transformers & The National Grid",
+        tier: "triple",
+        focusedDrill: true,
+        question: "Explain why STEP-UP TRANSFORMERS are used between power stations and long-distance overhead transmission cables in the National Grid.",
+        options: [
+          "Stepping up the potential difference (e.g. to 400 kV) reduces the current needed to transmit the same electrical power (since P = V I); a smaller current drastically reduces the thermal energy wasted by heating in the resistance of the transmission cables (since power lost P = I<sup>2</sup>R), making transmission far more efficient",
+          "Stepping up the potential difference increases the current so electricity travels faster through the cables",
+          "Stepping up the potential difference makes overhead cables safe to touch with bare hands",
+          "Step-up transformers convert AC into DC so the cables stay cold"
+        ],
+        correct: 0,
+        insight: "AQA 8463 high-value 3–4 mark explanation: Step-up transformer increases p.d. &rArr; decreases current (for fixed power P = VI) &rArr; reduces resistive heating energy loss in cables (P = I<sup>2</sup>R) &rArr; increases efficiency of National Grid."
+      },
+      {
+        id: "P7_Q71",
+        subtopic: "Transformers & The National Grid",
+        tier: "triple",
+        focusedDrill: false,
+        question: "Why are STEP-DOWN TRANSFORMERS used near towns, factories, and homes before electricity enters domestic sockets?",
+        options: [
+          "To reduce the dangerously high transmission potential difference (400 kV) down to a much safer value (230 V for homes) suitable for domestic appliances",
+          "To eliminate all electrical resistance in household wiring",
+          "To increase the potential difference to 1,000,000 V",
+          "To convert 50 Hz AC into 5000 Hz ultrasound"
+        ],
+        correct: 0,
+        insight: "Step-down transformers bring p.d. down to safe, usable levels (230 V mains in the UK)."
+      },
+      {
+        id: "P7_Q72",
+        subtopic: "Transformers & The National Grid",
+        tier: "triple",
+        focusedDrill: true,
+        question: "If a step-up transformer increases the potential difference across transmission cables by a factor of 10 (keeping total power transmitted constant), by what factor does the power wasted as heat in the cables (P = I<sup>2</sup>R) DECREASE?",
+        options: [
+          "Decreases by a factor of 100 (since current I is reduced by a factor of 10, and I<sup>2</sup> decreases by 10<sup>2</sup> = 100)",
+          "Decreases by a factor of 10",
+          "Decreases by a factor of 20",
+          "Stays completely unchanged"
+        ],
+        correct: 0,
+        insight: "Because resistive heating loss P = I<sup>2</sup>R depends on current SQUARED, cutting current to 1/10 reduces heating losses to (1/10)<sup>2</sup> = 1/100!"
+      },
+      {
+        id: "P7_Q73",
+        subtopic: "Transformers & The National Grid",
+        tier: "triple",
+        focusedDrill: true,
+        question: "A 100% efficient transformer has 800 primary turns and 40 secondary turns. If the primary current is 0.15 A, calculate the secondary current I<sub>s</sub>.",
+        options: [
+          "3.0 A",
+          "0.0075 A",
+          "0.30 A",
+          "6.0 A"
+        ],
+        correct: 0,
+        insight: "Turns ratio n<sub>p</sub> / n<sub>s</sub> = 800 / 40 = 20 (step-down by 20&times;), so V<sub>s</sub> is 20&times; smaller and I<sub>s</sub> is 20&times; larger: I<sub>s</sub> = 0.15 &times; 20 = 3.0 A."
+      },
+      {
+        id: "P7_Q74",
+        subtopic: "Transformers & The National Grid",
+        tier: "triple",
+        focusedDrill: true,
+        question: "A laptop charger transformer steps down 230 V AC to 19 V AC. If the secondary coil has 76 turns, calculate the number of turns on the primary coil.",
+        options: [
+          "920 turns",
+          "6.3 turns",
+          "460 turns",
+          "1840 turns"
+        ],
+        correct: 0,
+        insight: "n<sub>p</sub> = n<sub>s</sub> &times; (V<sub>p</sub> / V<sub>s</sub>) = 76 &times; (230 / 19) = 76 &times; 12.105 = 920 turns."
+      },
+      {
+        id: "P7_Q75",
+        subtopic: "Transformers & The National Grid",
+        tier: "triple",
+        focusedDrill: false,
+        question: "In a real (non-ideal) transformer, why is the efficiency slightly less than 100% (for example 96%), and why does the iron core become warm during operation?",
+        options: [
+          "Some energy is dissipated thermally due to the electrical resistance of the copper coil windings and small induced eddy currents / magnetic hysteresis in the iron core (reduced by laminating the iron core)",
+          "Because half of the electrons leak out into the air",
+          "Because the secondary coil destroys electrical charge",
+          "Because the primary coil uses a permanent steel magnet"
+        ],
+        correct: 0,
+        insight: "Real transformers lose a small amount of energy as thermal energy in the windings and core; laminating the soft iron core reduces eddy-current heating."
+      },
+      {
+        id: "P7_Q76",
+        subtopic: "Transformers & The National Grid",
+        tier: "triple",
+        focusedDrill: true,
+        question: "A transformer has 500 turns on the primary coil and 2500 turns on the secondary coil. If the input frequency is 50 Hz AC at 24 V, what are the OUTPUT potential difference and OUTPUT frequency?",
+        options: [
+          "120 V at 50 Hz (a transformer changes the alternating p.d. and current, while the AC frequency remains unchanged at 50 Hz)",
+          "120 V at 250 Hz",
+          "4.8 V at 10 Hz",
+          "120 V steady DC (0 Hz)"
+        ],
+        correct: 0,
+        insight: "V<sub>s</sub> = 24 &times; (2500 / 500) = 120 V. The frequency of the induced alternating p.d. is identical to the primary supply frequency (50 Hz)."
+      }
+    ];
+
+    /* ==========================================================================
+       APPLICATION STATE & TIER FILTERING
+       ========================================================================== */
+    const configState = {
+      studentName: "",
+      studentEmail: "",
+      tier: "higher",         // 'foundation' | 'higher' | 'separate'
+      focus: "all",           // 'all' | 'focused'
+      questionCount: 20
+    };
+
+    const quizState = {
+      questions: [],
+      currentIndex: 0,
+      answers: [],            // { question, selectedIndex, isCorrect }
+      answeredCurrent: false,
+      isRetryMode: false
+    };
+
+    const TIER_META = {
+      foundation: { name: "Foundation Tier", badge: "Foundation Tier Selected" },
+      higher: { name: "Higher Tier", badge: "Higher Tier Selected" },
+      separate: { name: "Separate Physics (8463)", badge: "Separate Physics (8463) Selected" }
+    };
+
+    const FOCUS_META = {
+      all: "All Magnetism & Electromagnetism Topics",
+      focused: "Motor Effect, Generator & Calculations Only"
+    };
+
+    /* Tier inclusion logic:
+       - Foundation: 'foundation' questions only
+       - Higher: 'foundation' + 'higher' questions (Combined Science 8464 Higher)
+       - Separate Physics (8463): 'foundation' + 'higher' + 'triple' questions */
+    function isQuestionInTier(q, selectedTier) {
+      if (selectedTier === "foundation") return q.tier === "foundation";
+      if (selectedTier === "higher") return q.tier === "foundation" || q.tier === "higher";
+      return true;
+    }
+
+    function getFilteredPool() {
+      return QUESTION_POOL.filter(q => {
+        const tierMatch = isQuestionInTier(q, configState.tier);
+        const focusMatch = configState.focus === "all" ? true : q.focusedDrill === true;
+        return tierMatch && focusMatch;
+      });
+    }
+
+    function updateConfigUI() {
+      ["foundation", "higher", "separate"].forEach(t => {
+        const card = document.getElementById(`tier-card-${t}`);
+        const isSel = configState.tier === t;
+        card.classList.toggle("selected", isSel);
+        card.setAttribute("aria-checked", isSel ? "true" : "false");
+      });
+      document.getElementById("selected-tier-badge").textContent = TIER_META[configState.tier].badge;
+
+      ["all", "focused"].forEach(f => {
+        const card = document.getElementById(`focus-card-${f}`);
+        const chk = document.getElementById(`focus-check-${f}`);
+        const isSel = configState.focus === f;
+        card.classList.toggle("selected", isSel);
+        card.setAttribute("aria-checked", isSel ? "true" : "false");
+        chk.classList.toggle("hidden", !isSel);
+      });
+
+      document.querySelectorAll(".count-btn").forEach(btn => {
+        const val = Number(btn.getAttribute("data-count"));
+        btn.classList.toggle("active", val === configState.questionCount);
+      });
+
+      const pool = getFilteredPool();
+      const focusSuffix = configState.focus === "focused" ? " (Motor Effect, Generator & Calculations)" : "";
+      document.getElementById("available-q-label").textContent =
+        `${pool.length} unique questions available for ${TIER_META[configState.tier].name}${focusSuffix}`;
+
+      const capBanner = document.getElementById("cap-feedback-banner");
+      const effectiveCount = Math.min(configState.questionCount, pool.length);
+
+      if (pool.length === 0) {
+        capBanner.textContent =
+          `Note: Motor Effect, F = BIl, Generator Effect, and Transformer equations are Higher / Separate Physics (8463) topics. Switch to Higher Tier or Separate Physics (8463), or choose "All Magnetism & Electromagnetism Topics" for Foundation Tier.`;
+        capBanner.classList.remove("hidden");
+      } else if (configState.questionCount > pool.length) {
+        capBanner.textContent =
+          `Note: ${TIER_META[configState.tier].name}${focusSuffix} has ${pool.length} unique questions in the bank, so your quiz will automatically cap at all ${pool.length} available unique questions.`;
+        capBanner.classList.remove("hidden");
+      } else {
+        capBanner.classList.add("hidden");
+      }
+
+      const startBtn = document.getElementById("btn-start-quiz");
+      if (pool.length === 0) {
+        startBtn.innerHTML = `Select Higher / Separate Tier or All Topics to Start &rarr;`;
+      } else {
+        startBtn.innerHTML = `Start Diagnostic Quiz (${effectiveCount} Questions) &rarr;`;
+      }
+    }
+
+    function selectTier(tierKey) {
+      configState.tier = tierKey;
+      // Automatically switch to 'all' if Foundation is chosen while 'focused' has 0 questions
+      if (tierKey === "foundation" && configState.focus === "focused") {
+        configState.focus = "all";
+      }
+      updateConfigUI();
+    }
+
+    function selectFocus(focusKey) {
+      configState.focus = focusKey;
+      // If user clicks Motor Effect / Generator drill while on Foundation, auto-promote to Higher Tier so they get immediate questions
+      if (focusKey === "focused" && configState.tier === "foundation") {
+        configState.tier = "higher";
+      }
+      updateConfigUI();
+    }
+
+    function selectCount(num) {
+      configState.questionCount = num;
+      updateConfigUI();
+    }
+
+    function shuffleArray(arr) {
+      const copy = [...arr];
+      for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    }
+
+    /* Shuffles answer option order (A, B, C, D) on every run while tracking the exact correct answer */
+    function prepareQuestionInstance(qObj) {
+      const indexedOptions = qObj.options.map((text, idx) => ({
+        text,
+        isRight: idx === qObj.correct
+      }));
+      const shuffled = shuffleArray(indexedOptions);
+      return {
+        ...qObj,
+        options: shuffled.map(o => o.text),
+        correct: shuffled.findIndex(o => o.isRight)
+      };
+    }
+
+    function launchConfiguredQuiz() {
+      const nameInput = document.getElementById("student-name");
+      const errorMsg = document.getElementById("name-error-msg");
+      const rawName = nameInput.value.trim();
+
+      if (!rawName) {
+        nameInput.classList.remove("input-error");
+        void nameInput.offsetWidth;
+        nameInput.classList.add("input-error");
+        errorMsg.classList.remove("hidden");
+        nameInput.focus();
+        return;
+      }
+
+      nameInput.classList.remove("input-error");
+      errorMsg.classList.add("hidden");
+
+      const availablePool = getFilteredPool();
+      if (availablePool.length === 0) {
+        selectFocus("all");
+        return;
+      }
+
+      configState.studentName = rawName;
+      configState.studentEmail = document.getElementById("student-email").value.trim();
+
+      const pool = shuffleArray(availablePool);
+      const selectedQuestions = pool
+        .slice(0, Math.min(configState.questionCount, pool.length))
+        .map(prepareQuestionInstance);
+
+      quizState.questions = selectedQuestions;
+      quizState.currentIndex = 0;
+      quizState.answers = [];
+      quizState.answeredCurrent = false;
+      quizState.isRetryMode = false;
+
+      switchScreen("view-quiz");
+      document.getElementById("banner-main-title").textContent = "Topic 7: Magnetism & Electromagnetism";
+      document.getElementById("banner-main-sub").textContent =
+        `${TIER_META[configState.tier].name} • ${FOCUS_META[configState.focus]}`;
+
+      renderActiveQuestion();
+    }
+
+    function startRetryMissed() {
+      const missedQuestions = quizState.answers
+        .filter(item => !item.isCorrect)
+        .map(item => prepareQuestionInstance(item.question));
+
+      if (missedQuestions.length === 0) return;
+
+      quizState.questions = missedQuestions;
+      quizState.currentIndex = 0;
+      quizState.answers = [];
+      quizState.answeredCurrent = false;
+      quizState.isRetryMode = true;
+
+      switchScreen("view-quiz");
+      renderActiveQuestion();
+    }
+
+    function returnToConfig() {
+      switchScreen("view-config");
+      document.getElementById("banner-main-title").textContent = "Topic 7: Magnetism & Electromagnetism";
+      document.getElementById("banner-main-sub").textContent =
+        "Interactive Diagnostic Revision Hub • Foundation, Higher & Separate Physics";
+      updateConfigUI();
+    }
+
+    function switchScreen(activeId) {
+      ["view-config", "view-quiz", "view-report"].forEach(id => {
+        document.getElementById(id).classList.toggle("hidden", id !== activeId);
+      });
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    /* ==========================================================================
+       ACTIVE QUIZ ENGINE
+       ========================================================================== */
+    function renderActiveQuestion() {
+      const total = quizState.questions.length;
+      const idx = quizState.currentIndex;
+      const qObj = quizState.questions[idx];
+      quizState.answeredCurrent = false;
+
+      document.getElementById("hud-student-pill").textContent = configState.studentName;
+      document.getElementById("hud-tier-pill").textContent = TIER_META[configState.tier].name;
+      document.getElementById("hud-focus-pill").textContent = FOCUS_META[configState.focus];
+      document.getElementById("hud-retry-pill").classList.toggle("hidden", !quizState.isRetryMode);
+
+      const scoreSoFar = quizState.answers.filter(a => a.isCorrect).length;
+      document.getElementById("hud-live-score").textContent = `Score: ${scoreSoFar} / ${quizState.answers.length}`;
+      document.getElementById("hud-counter").textContent = `Question ${idx + 1} of ${total}`;
+
+      const pct = Math.round((idx / total) * 100);
+      document.getElementById("quiz-progress-fill").style.width = `${pct}%`;
+
+      const kickerEl = document.getElementById("q-kicker-label");
+      kickerEl.innerHTML = `<span>Question ${idx + 1} of ${total} &bull; ${qObj.subtopic}</span>` +
+        (qObj.focusedDrill ? `<span class="focus-badge">MOTOR / GENERATOR / CALC</span>` : "");
+
+      document.getElementById("q-stem-text").innerHTML = qObj.question;
+
+      const optionsContainer = document.getElementById("quiz-options-list");
+      optionsContainer.innerHTML = "";
+      const letters = ["A", "B", "C", "D"];
+
+      qObj.options.forEach((optText, optIdx) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "opt-btn";
+        btn.innerHTML = `
+          <span class="opt-letter">${letters[optIdx]}</span>
+          <span>${optText}</span>
+        `;
+        btn.addEventListener("click", () => submitOption(optIdx));
+        optionsContainer.appendChild(btn);
+      });
+
+      const fbPanel = document.getElementById("quiz-feedback-panel");
+      fbPanel.className = "feedback-panel hidden";
+
+      const nextBtn = document.getElementById("btn-next-question");
+      nextBtn.classList.add("hidden");
+      nextBtn.innerHTML = idx === total - 1 ? "View Diagnostic Mastery Dashboard &rarr;" : "Next Question &rarr;";
+    }
+
+    function submitOption(selectedIdx) {
+      if (quizState.answeredCurrent) return;
+      quizState.answeredCurrent = true;
+
+      const qObj = quizState.questions[quizState.currentIndex];
+      const isCorrect = selectedIdx === qObj.correct;
+
+      quizState.answers.push({
+        question: qObj,
+        selectedIndex: selectedIdx,
+        isCorrect: isCorrect
+      });
+
+      const scoreSoFar = quizState.answers.filter(a => a.isCorrect).length;
+      document.getElementById("hud-live-score").textContent = `Score: ${scoreSoFar} / ${quizState.answers.length}`;
+
+      const total = quizState.questions.length;
+      const donePct = Math.round(((quizState.currentIndex + 1) / total) * 100);
+      document.getElementById("quiz-progress-fill").style.width = `${donePct}%`;
+
+      const optionBtns = document.querySelectorAll("#quiz-options-list .opt-btn");
+      optionBtns.forEach((btn, idx) => {
+        btn.disabled = true;
+        if (idx === qObj.correct) {
+          btn.classList.add("correct");
+        } else if (idx === selectedIdx && !isCorrect) {
+          btn.classList.add("incorrect");
+        } else {
+          btn.classList.add("dimmed");
+        }
+      });
+
+      const fbPanel = document.getElementById("quiz-feedback-panel");
+      const fbStatus = document.getElementById("fb-status-text");
+      const fbInsight = document.getElementById("fb-insight-text");
+
+      fbPanel.classList.remove("hidden", "fb-pass", "fb-fail");
+      if (isCorrect) {
+        fbPanel.classList.add("fb-pass");
+        fbStatus.textContent = "✓ Correct — Full Marks!";
+      } else {
+        fbPanel.classList.add("fb-fail");
+        const correctLetter = ["A", "B", "C", "D"][qObj.correct];
+        fbStatus.textContent = `✗ Incorrect — Correct Answer: Option ${correctLetter}`;
+      }
+      fbInsight.innerHTML = qObj.insight;
+
+      document.getElementById("btn-next-question").classList.remove("hidden");
+    }
+
+    function advanceQuestion() {
+      if (quizState.currentIndex < quizState.questions.length - 1) {
+        quizState.currentIndex++;
+        renderActiveQuestion();
+      } else {
+        showDiagnosticReport();
+      }
+    }
+
+    /* ==========================================================================
+       DIAGNOSTIC MASTERY DASHBOARD
+       ========================================================================== */
+    function showDiagnosticReport() {
+      switchScreen("view-report");
+      document.getElementById("banner-main-title").textContent = "Topic 7 Diagnostic Mastery Report";
+      document.getElementById("banner-main-sub").textContent =
+        `Completed by ${configState.studentName}${configState.studentEmail ? ` (${configState.studentEmail})` : ""} • ${TIER_META[configState.tier].name} • ${FOCUS_META[configState.focus]}`;
+
+      const total = quizState.answers.length;
+      const correct = quizState.answers.filter(a => a.isCorrect).length;
+      const missed = total - correct;
+      const pct = Math.round((correct / total) * 100);
+
+      document.getElementById("rep-student-header").textContent =
+        `${configState.studentName}${configState.studentEmail ? ` • ${configState.studentEmail}` : ""} • ${TIER_META[configState.tier].name} • ${FOCUS_META[configState.focus]}${quizState.isRetryMode ? " (Retry Round)" : ""}`;
+      document.getElementById("rep-pct-val").textContent = `${pct}%`;
+      document.getElementById("rep-frac-val").textContent = `(${correct} / ${total})`;
+      document.getElementById("rep-grade-pill").textContent = estimateAqaGrade(pct, configState.tier);
+
+      const msgEl = document.getElementById("rep-msg-text");
+      if (pct === 100) {
+        msgEl.textContent = `Outstanding achievement, ${configState.studentName}! You scored 100% across every question. Your AQA Topic 7 Magnetism & Electromagnetism knowledge, Fleming's rules, and equations are exam-ready.`;
+      } else if (pct >= 75) {
+        msgEl.textContent = `Strong performance, ${configState.studentName}! You have a solid command of Magnetism & Electromagnetism. Click 'Retry Missed Questions' below to master the final ${missed} question${missed === 1 ? "" : "s"}.`;
+      } else if (pct >= 50) {
+        msgEl.textContent = `Good progress, ${configState.studentName}! Review the amber and red sub-topics below, study the AQA Examiner Insights, and retry your missed questions to push into the top grade boundaries.`;
+      } else {
+        msgEl.textContent = `Great active recall practice, ${configState.studentName}! Focus on the Priority Revision sub-topics in red below, read the tailored AQA revision guidance, and retry your missed questions.`;
+      }
+
+      const retryBtn = document.getElementById("btn-retry-missed");
+      if (missed > 0) {
+        retryBtn.classList.remove("hidden");
+        retryBtn.textContent = `Retry Missed Questions (${missed})`;
+      } else {
+        retryBtn.classList.add("hidden");
+      }
+
+      const topicMap = {};
+      quizState.answers.forEach(entry => {
+        const t = entry.question.subtopic;
+        if (!topicMap[t]) topicMap[t] = { correct: 0, total: 0 };
+        topicMap[t].total++;
+        if (entry.isCorrect) topicMap[t].correct++;
+      });
+
+      const masteryGrid = document.getElementById("rep-mastery-grid");
+      masteryGrid.innerHTML = "";
+
+      Object.keys(topicMap).forEach(topicName => {
+        const { correct: c, total: t } = topicMap[topicName];
+        const subPct = Math.round((c / t) * 100);
+
+        let chipClass = "sc-weak";
+        let fillClass = "fill-r";
+        let statusLabel = "Priority Revision";
+
+        if (subPct >= 75) {
+          chipClass = "sc-strong";
+          fillClass = "fill-g";
+          statusLabel = "Strong Area";
+        } else if (subPct >= 50) {
+          chipClass = "sc-dev";
+          fillClass = "fill-a";
+          statusLabel = "Developing";
+        }
+
+        const tip = subPct >= 75
+          ? "Secure understanding demonstrated—maintain with spaced active recall."
+          : (SUBTOPIC_GUIDANCE[topicName] || "Review examiner insights and retry missed questions in this sub-topic.");
+
+        const card = document.createElement("div");
+        card.className = "mastery-item";
+        card.innerHTML = `
+          <div class="mastery-item-top">
+            <span class="mastery-name">${topicName}</span>
+            <div class="mastery-right">
+              <span class="status-chip ${chipClass}">${statusLabel}</span>
+              <span style="font-size:0.84rem; font-weight:700; color:var(--slate-700);">${c}/${t} (${subPct}%)</span>
+            </div>
+          </div>
+          <div class="mastery-bar-track">
+            <div class="mastery-bar-fill ${fillClass}" style="width: ${subPct}%"></div>
+          </div>
+          <div class="mastery-tip">${tip}</div>
+        `;
+        masteryGrid.appendChild(card);
+      });
+
+      const reviewList = document.getElementById("rep-review-list");
+      reviewList.innerHTML = "";
+      reviewList.classList.add("hidden");
+      document.getElementById("btn-toggle-review").textContent = "Expand Full Question-by-Question Review";
+
+      const letters = ["A", "B", "C", "D"];
+      quizState.answers.forEach((entry, idx) => {
+        const q = entry.question;
+        const userAns = `${letters[entry.selectedIndex]}. ${q.options[entry.selectedIndex]}`;
+        const rightAns = `${letters[q.correct]}. ${q.options[q.correct]}`;
+
+        const item = document.createElement("div");
+        item.className = `review-card ${entry.isCorrect ? "rc-ok" : "rc-bad"}`;
+        item.innerHTML = `
+          <div class="rc-kicker">Question ${idx + 1} &bull; ${q.subtopic} &bull; ${entry.isCorrect ? "Correct" : "Incorrect"}</div>
+          <div class="rc-q">${q.question}</div>
+          <div class="rc-ans"><strong>Your Answer:</strong> <span style="color:${entry.isCorrect ? "var(--emerald-700)" : "var(--rose-600)"}; font-weight:600;">${userAns}</span></div>
+          ${!entry.isCorrect ? `<div class="rc-ans"><strong>Correct Answer:</strong> <span style="color:var(--emerald-700); font-weight:600;">${rightAns}</span></div>` : ""}
+          <div class="rc-exp"><strong>AQA Examiner Insight:</strong> ${q.insight}</div>
+        `;
+        reviewList.appendChild(item);
+      });
+    }
+
+    function estimateAqaGrade(pct, tier) {
+      if (tier === "foundation") {
+        if (pct >= 80) return "Estimated AQA Grade Indicator: Grade 5 (Maximum Foundation)";
+        if (pct >= 62) return "Estimated AQA Grade Indicator: Grade 4 (Standard Pass)";
+        if (pct >= 45) return "Estimated AQA Grade Indicator: Grade 3";
+        return "Estimated AQA Grade Indicator: Grade 2 (Keep Practising)";
+      }
+      if (pct >= 86) return "Estimated AQA Grade Indicator: Grade 9";
+      if (pct >= 76) return "Estimated AQA Grade Indicator: Grade 8";
+      if (pct >= 66) return "Estimated AQA Grade Indicator: Grade 7";
+      if (pct >= 56) return "Estimated AQA Grade Indicator: Grade 6";
+      if (pct >= 46) return "Estimated AQA Grade Indicator: Grade 5";
+      if (pct >= 36) return "Estimated AQA Grade Indicator: Grade 4";
+      return "Estimated AQA Grade Indicator: Below Grade 4 (Target Revision)";
+    }
+
+    function toggleReviewSection() {
+      const list = document.getElementById("rep-review-list");
+      const btn = document.getElementById("btn-toggle-review");
+      const isHidden = list.classList.toggle("hidden");
+      btn.textContent = isHidden ? "Expand Full Question-by-Question Review" : "Collapse Full Question-by-Question Review";
+      if (!isHidden) {
+        list.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+
+    /* ==========================================================================
+       KEYBOARD SHORTCUTS & INITIALISATION
+       ========================================================================== */
+    document.getElementById("student-name").addEventListener("input", function () {
+      if (this.value.trim()) {
+        this.classList.remove("input-error");
+        document.getElementById("name-error-msg").classList.add("hidden");
+      }
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (document.getElementById("view-quiz").classList.contains("hidden")) return;
+      const key = e.key.toUpperCase();
+      if (!quizState.answeredCurrent) {
+        if (key === "1" || key === "A") submitOption(0);
+        else if (key === "2" || key === "B") submitOption(1);
+        else if (key === "3" || key === "C") submitOption(2);
+        else if (key === "4" || key === "D") submitOption(3);
+      } else if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        advanceQuestion();
+      }
+    });
+
+    updateConfigUI();
+  </script>
+</body>
+</html>
